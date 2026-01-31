@@ -305,32 +305,40 @@ def fetch_schedule():
     logger.info("Fetching schedule...")
     all_games = {}  # Use dict to dedupe by game ID
 
-    # Fetch from season endpoint
+    # Fetch from season endpoint (most reliable for specific league)
     data = api_get('/eventsseason.php', {'id': LEAGUE_ID, 's': SEASON})
     if data and data.get('events'):
         for game in data['events']:
-            game_id = game.get('idEvent')
-            if game_id:
-                all_games[game_id] = game
-        logger.info(f"  Season endpoint: {len(data['events'])} games")
+            # Filter to ensure correct league
+            if game.get('idLeague') == LEAGUE_ID:
+                game_id = game.get('idEvent')
+                if game_id:
+                    all_games[game_id] = game
+        logger.info(f"  Season endpoint: {len(all_games)} games")
 
-    # Fetch recent past games (more current data)
+    # Fetch recent past games (filter by league ID)
     data = api_get('/eventspastleague.php', {'id': LEAGUE_ID})
     if data and data.get('events'):
+        count = 0
         for game in data['events']:
-            game_id = game.get('idEvent')
-            if game_id:
-                all_games[game_id] = game
-        logger.info(f"  Past events endpoint: {len(data['events'])} games")
+            if game.get('idLeague') == LEAGUE_ID:
+                game_id = game.get('idEvent')
+                if game_id:
+                    all_games[game_id] = game
+                    count += 1
+        logger.info(f"  Past events endpoint: {count} games (filtered)")
 
-    # Fetch upcoming games
+    # Fetch upcoming games (filter by league ID)
     data = api_get('/eventsnextleague.php', {'id': LEAGUE_ID})
     if data and data.get('events'):
+        count = 0
         for game in data['events']:
-            game_id = game.get('idEvent')
-            if game_id:
-                all_games[game_id] = game
-        logger.info(f"  Next events endpoint: {len(data['events'])} games")
+            if game.get('idLeague') == LEAGUE_ID:
+                game_id = game.get('idEvent')
+                if game_id:
+                    all_games[game_id] = game
+                    count += 1
+        logger.info(f"  Next events endpoint: {count} games (filtered)")
 
     games = list(all_games.values())
     logger.info(f"  Total unique games: {len(games)}")
