@@ -184,8 +184,8 @@ HOME_TEMPLATE = """
 <p class="last-updated">Last updated: {{ export_date }}</p>
 
 <div class="note-box">
-    <strong>Note:</strong> Player statistics (PPG, RPG, APG) are not available in this version.
-    TheSportsDB free tier does not include box score data.
+    <strong>Note:</strong> Player statistics are sourced from official ACB.com box scores.
+    Click on a player to see their game log and upcoming schedule.
 </div>
 
 <div class="filters">
@@ -223,8 +223,11 @@ HOME_TEMPLATE = """
             <th><a href="?sort=team&{{ query_string }}">Team</a></th>
             <th>Position</th>
             <th>Height</th>
+            <th>GP</th>
+            <th>PPG</th>
+            <th>RPG</th>
+            <th>APG</th>
             <th>Hometown</th>
-            <th>High School</th>
             <th>College</th>
         </tr>
     </thead>
@@ -235,8 +238,11 @@ HOME_TEMPLATE = """
             <td>{{ player.team or 'N/A' }}</td>
             <td>{{ player.position or 'N/A' }}</td>
             <td>{% if player.height_feet %}{{ player.height_feet }}'{{ player.height_inches }}"{% else %}N/A{% endif %}</td>
+            <td class="stats">{{ player.games_played or '-' }}</td>
+            <td class="stats">{{ '%.1f'|format(player.ppg) if player.ppg else '-' }}</td>
+            <td class="stats">{{ '%.1f'|format(player.rpg) if player.rpg else '-' }}</td>
+            <td class="stats">{{ '%.1f'|format(player.apg) if player.apg else '-' }}</td>
             <td class="hometown">{{ player.hometown or 'Unknown' }}</td>
-            <td>{{ player.high_school or 'N/A' }}</td>
             <td>{{ player.college or 'N/A' }}</td>
         </tr>
         {% endfor %}
@@ -337,13 +343,75 @@ PLAYER_TEMPLATE = """
 </div>
 {% endif %}
 
+{% if player.games_played %}
 <div class="player-card">
-    <h3>About</h3>
+    <h3>Season Stats (2024-25)</h3>
+    <table class="game-log">
+        <thead>
+            <tr>
+                <th>Games</th>
+                <th>PPG</th>
+                <th>RPG</th>
+                <th>APG</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="stats">{{ player.games_played }}</td>
+                <td class="stats">{{ '%.1f'|format(player.ppg) if player.ppg else '-' }}</td>
+                <td class="stats">{{ '%.1f'|format(player.rpg) if player.rpg else '-' }}</td>
+                <td class="stats">{{ '%.1f'|format(player.apg) if player.apg else '-' }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endif %}
+
+{% if player.game_log %}
+<div class="player-card">
+    <h3>Game Log</h3>
+    <table class="game-log">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Opponent</th>
+                <th>MIN</th>
+                <th>PTS</th>
+                <th>REB</th>
+                <th>AST</th>
+                <th>FG</th>
+                <th>3PT</th>
+                <th>FT</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for game in player.game_log %}
+            <tr>
+                <td>{{ game.date or 'N/A' }}</td>
+                <td>{{ game.opponent or 'N/A' }}</td>
+                <td>{{ game.minutes or '-' }}</td>
+                <td class="stats">{{ game.points or '-' }}</td>
+                <td>{{ game.rebounds or '-' }}</td>
+                <td>{{ game.assists or '-' }}</td>
+                <td>{{ game.fg_made or 0 }}-{{ game.fg_attempted or 0 }}</td>
+                <td>{{ game.three_made or 0 }}-{{ game.three_attempted or 0 }}</td>
+                <td>{{ game.ft_made or 0 }}-{{ game.ft_attempted or 0 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+
+{% if not player.games_played and not player.game_log %}
+<div class="player-card">
+    <h3>Statistics</h3>
     <p class="note-box">
-        <strong>Note:</strong> Game statistics are not available in this version.
-        TheSportsDB free API tier does not include box score data.
+        <strong>Note:</strong> No game statistics available yet for this player.
+        Stats will appear once they play in Liga ACB games.
     </p>
 </div>
+{% endif %}
 {% endblock %}
 """
 

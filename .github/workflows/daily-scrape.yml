@@ -1,0 +1,46 @@
+name: Daily Liga ACB Scrape
+
+on:
+  schedule:
+    # Run at 6:00 AM UTC every day (adjust as needed)
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    # Allow manual trigger from GitHub UI
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 flask
+
+      - name: Run daily scraper (TheSportsDB)
+        run: python daily_scraper.py
+        continue-on-error: true
+
+      - name: Run ACB scraper (box scores)
+        run: python acb_scraper.py
+
+      - name: Run join data
+        run: python join_data.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add output/json/*.json
+          git diff --staged --quiet || git commit -m "Daily scrape: $(date +'%Y-%m-%d %H:%M UTC')"
+          git push

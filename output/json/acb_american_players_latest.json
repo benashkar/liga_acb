@@ -1,0 +1,968 @@
+{
+  "export_date": "2026-01-31T09:29:53.726470",
+  "season": "2025-2026",
+  "league": "Liga ACB",
+  "player_count": 18,
+  "players": [
+    {
+      "acb_id": "30001169",
+      "name": "T. Kalinoski",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "T. Kalinoski",
+          "acb_id": "30001169",
+          "minutes": "16:27",
+          "points": 6,
+          "assists": 2,
+          "match_id": "104459",
+          "jornada": 1
+        },
+        {
+          "name": "T. Kalinoski",
+          "acb_id": "30001169",
+          "minutes": "18:01",
+          "points": 4,
+          "assists": 2,
+          "match_id": "104470",
+          "jornada": 1
+        },
+        {
+          "name": "T. Kalinoski",
+          "acb_id": "30001169",
+          "minutes": "19:45",
+          "points": 3,
+          "assists": 2,
+          "match_id": "104485",
+          "jornada": 1
+        },
+        {
+          "name": "T. Kalinoski",
+          "acb_id": "30001169",
+          "minutes": "25:41",
+          "points": 8,
+          "assists": 2,
+          "match_id": "104488",
+          "jornada": 1
+        },
+        {
+          "name": "T. Kalinoski",
+          "acb_id": "30001169",
+          "minutes": "20:14",
+          "points": 4,
+          "assists": 2,
+          "match_id": "104496",
+          "jornada": 1
+        },
+        {
+          "name": "T. Kalinoski",
+          "acb_id": "30001169",
+          "minutes": "20:58",
+          "points": 3,
+          "assists": 3,
+          "match_id": "104507",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 6,
+      "calculated_ppg": 4.7,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 2.2
+    },
+    {
+      "acb_id": "30000023",
+      "name": "D. Kravish",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "D. Kravish",
+          "acb_id": "30000023",
+          "minutes": "19:31",
+          "points": 7,
+          "assists": 4,
+          "match_id": "104459",
+          "jornada": 1
+        },
+        {
+          "name": "D. Kravish",
+          "acb_id": "30000023",
+          "minutes": "09:37",
+          "points": 6,
+          "assists": 0,
+          "match_id": "104470",
+          "jornada": 1
+        },
+        {
+          "name": "D. Kravish",
+          "acb_id": "30000023",
+          "minutes": "23:40",
+          "points": 11,
+          "assists": 1,
+          "match_id": "104485",
+          "jornada": 1
+        },
+        {
+          "name": "D. Kravish",
+          "acb_id": "30000023",
+          "minutes": "11:12",
+          "points": 2,
+          "assists": 0,
+          "match_id": "104488",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 4,
+      "calculated_ppg": 6.5,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 1.2
+    },
+    {
+      "acb_id": "30003945",
+      "name": "G. Golden",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "G. Golden",
+          "acb_id": "30003945",
+          "minutes": "21:37",
+          "points": 18,
+          "assists": 5,
+          "match_id": "104461",
+          "jornada": 1
+        },
+        {
+          "name": "G. Golden",
+          "acb_id": "30003945",
+          "minutes": "19:45",
+          "points": 12,
+          "assists": 2,
+          "match_id": "104471",
+          "jornada": 1
+        },
+        {
+          "name": "G. Golden",
+          "acb_id": "30003945",
+          "minutes": "11:35",
+          "points": 4,
+          "assists": 1,
+          "match_id": "104477",
+          "jornada": 1
+        },
+        {
+          "name": "G. Golden",
+          "acb_id": "30003945",
+          "minutes": "19:22",
+          "points": 18,
+          "assists": 2,
+          "match_id": "104494",
+          "jornada": 1
+        },
+        {
+          "name": "G. Golden",
+          "acb_id": "30003945",
+          "minutes": "16:20",
+          "points": 6,
+          "assists": 1,
+          "match_id": "104495",
+          "jornada": 1
+        },
+        {
+          "name": "G. Golden",
+          "acb_id": "30003945",
+          "minutes": "22:12",
+          "points": 9,
+          "assists": 1,
+          "match_id": "104504",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 6,
+      "calculated_ppg": 11.2,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 2.0
+    },
+    {
+      "acb_id": "20212430",
+      "name": "M. Thomas",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "M. Thomas",
+          "acb_id": "20212430",
+          "minutes": "31:59",
+          "points": 9,
+          "assists": 4,
+          "match_id": "104463",
+          "jornada": 1
+        },
+        {
+          "name": "M. Thomas",
+          "acb_id": "20212430",
+          "minutes": "28:19",
+          "points": 14,
+          "assists": 0,
+          "match_id": "104471",
+          "jornada": 1
+        },
+        {
+          "name": "M. Thomas",
+          "acb_id": "20212430",
+          "minutes": "29:46",
+          "points": 12,
+          "assists": 1,
+          "match_id": "104484",
+          "jornada": 1
+        },
+        {
+          "name": "M. Thomas",
+          "acb_id": "20212430",
+          "minutes": "26:46",
+          "points": 20,
+          "assists": 2,
+          "match_id": "104486",
+          "jornada": 1
+        },
+        {
+          "name": "M. Thomas",
+          "acb_id": "20212430",
+          "minutes": "16:54",
+          "points": 7,
+          "assists": 2,
+          "match_id": "104498",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 5,
+      "calculated_ppg": 12.4,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 1.8
+    },
+    {
+      "acb_id": "30003981",
+      "name": "C. Okeke",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "C. Okeke",
+          "acb_id": "30003981",
+          "minutes": "20:55",
+          "points": 6,
+          "assists": 1,
+          "match_id": "104464",
+          "jornada": 1
+        },
+        {
+          "name": "C. Okeke",
+          "acb_id": "30003981",
+          "minutes": "16:39",
+          "points": 4,
+          "assists": 1,
+          "match_id": "104482",
+          "jornada": 1
+        },
+        {
+          "name": "C. Okeke",
+          "acb_id": "30003981",
+          "minutes": "16:26",
+          "points": 6,
+          "assists": 0,
+          "match_id": "104494",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 3,
+      "calculated_ppg": 5.3,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 0.7
+    },
+    {
+      "acb_id": "20201774",
+      "name": "S. Llull",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "S. Llull",
+          "acb_id": "20201774",
+          "minutes": "20:31",
+          "points": 10,
+          "assists": 3,
+          "match_id": "104464",
+          "jornada": 1
+        },
+        {
+          "name": "S. Llull",
+          "acb_id": "20201774",
+          "minutes": "18:52",
+          "points": 4,
+          "assists": 2,
+          "match_id": "104476",
+          "jornada": 1
+        },
+        {
+          "name": "S. Llull",
+          "acb_id": "20201774",
+          "minutes": "12:42",
+          "points": 2,
+          "assists": 1,
+          "match_id": "104482",
+          "jornada": 1
+        },
+        {
+          "name": "S. Llull",
+          "acb_id": "20201774",
+          "minutes": "13:47",
+          "points": 2,
+          "assists": 1,
+          "match_id": "104494",
+          "jornada": 1
+        },
+        {
+          "name": "S. Llull",
+          "acb_id": "20201774",
+          "minutes": "15:16",
+          "points": 10,
+          "assists": 1,
+          "match_id": "104500",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 5,
+      "calculated_ppg": 5.6,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 1.6
+    },
+    {
+      "acb_id": "30003817",
+      "name": "D.J. Stephens",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "D.J. Stephens",
+          "acb_id": "30003817",
+          "minutes": "19:23",
+          "points": 8,
+          "assists": 0,
+          "match_id": "104465",
+          "jornada": 1
+        },
+        {
+          "name": "D.J. Stephens",
+          "acb_id": "30003817",
+          "minutes": "14:35",
+          "points": 2,
+          "assists": 0,
+          "match_id": "104472",
+          "jornada": 1
+        },
+        {
+          "name": "D.J. Stephens",
+          "acb_id": "30003817",
+          "minutes": "16:51",
+          "points": 4,
+          "assists": 0,
+          "match_id": "104479",
+          "jornada": 1
+        },
+        {
+          "name": "D.J. Stephens",
+          "acb_id": "30003817",
+          "minutes": "12:51",
+          "points": 11,
+          "assists": 0,
+          "match_id": "104489",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 4,
+      "calculated_ppg": 6.2,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 0.0
+    },
+    {
+      "acb_id": "30003408",
+      "name": "T. Forrest",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "T. Forrest",
+          "acb_id": "30003408",
+          "minutes": "22:26",
+          "points": 6,
+          "assists": 5,
+          "match_id": "104465",
+          "jornada": 1
+        },
+        {
+          "name": "T. Forrest",
+          "acb_id": "30003408",
+          "minutes": "29:40",
+          "points": 26,
+          "assists": 7,
+          "match_id": "104476",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 2,
+      "calculated_ppg": 16.0,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 6.0
+    },
+    {
+      "acb_id": "30003919",
+      "name": "M. Forrest",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "M. Forrest",
+          "acb_id": "30003919",
+          "minutes": "19:49",
+          "points": 11,
+          "assists": 6,
+          "match_id": "104466",
+          "jornada": 1
+        },
+        {
+          "name": "M. Forrest",
+          "acb_id": "30003919",
+          "minutes": "19:40",
+          "points": 16,
+          "assists": 1,
+          "match_id": "104468",
+          "jornada": 1
+        },
+        {
+          "name": "M. Forrest",
+          "acb_id": "30003919",
+          "minutes": "16:17",
+          "points": 5,
+          "assists": 0,
+          "match_id": "104478",
+          "jornada": 1
+        },
+        {
+          "name": "M. Forrest",
+          "acb_id": "30003919",
+          "minutes": "15:44",
+          "points": 11,
+          "assists": 2,
+          "match_id": "104491",
+          "jornada": 1
+        },
+        {
+          "name": "M. Forrest",
+          "acb_id": "30003919",
+          "minutes": "19:07",
+          "points": 19,
+          "assists": 3,
+          "match_id": "104501",
+          "jornada": 1
+        },
+        {
+          "name": "M. Forrest",
+          "acb_id": "30003919",
+          "minutes": "16:09",
+          "points": 4,
+          "assists": 1,
+          "match_id": "104504",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 6,
+      "calculated_ppg": 11.0,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 2.2
+    },
+    {
+      "acb_id": "30001981",
+      "name": "K. Taylor",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "K. Taylor",
+          "acb_id": "30001981",
+          "minutes": "24:00",
+          "points": 11,
+          "assists": 5,
+          "match_id": "104467",
+          "jornada": 1
+        },
+        {
+          "name": "K. Taylor",
+          "acb_id": "30001981",
+          "minutes": "19:03",
+          "points": 2,
+          "assists": 4,
+          "match_id": "104474",
+          "jornada": 1
+        },
+        {
+          "name": "K. Taylor",
+          "acb_id": "30001981",
+          "minutes": "18:43",
+          "points": 14,
+          "assists": 1,
+          "match_id": "104483",
+          "jornada": 1
+        },
+        {
+          "name": "K. Taylor",
+          "acb_id": "30001981",
+          "minutes": "19:17",
+          "points": 17,
+          "assists": 1,
+          "match_id": "104493",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 4,
+      "calculated_ppg": 11.0,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 2.8
+    },
+    {
+      "acb_id": "30002724",
+      "name": "N. Reuvers",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "N. Reuvers",
+          "acb_id": "30002724",
+          "minutes": "18:29",
+          "points": 11,
+          "assists": 0,
+          "match_id": "104467",
+          "jornada": 1
+        },
+        {
+          "name": "N. Reuvers",
+          "acb_id": "30002724",
+          "minutes": "17:36",
+          "points": 11,
+          "assists": 1,
+          "match_id": "104474",
+          "jornada": 1
+        },
+        {
+          "name": "N. Reuvers",
+          "acb_id": "30002724",
+          "minutes": "20:33",
+          "points": 12,
+          "assists": 0,
+          "match_id": "104483",
+          "jornada": 1
+        },
+        {
+          "name": "N. Reuvers",
+          "acb_id": "30002724",
+          "minutes": "18:39",
+          "points": 13,
+          "assists": 1,
+          "match_id": "104493",
+          "jornada": 1
+        },
+        {
+          "name": "N. Reuvers",
+          "acb_id": "30002724",
+          "minutes": "19:49",
+          "points": 14,
+          "assists": 1,
+          "match_id": "104502",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 5,
+      "calculated_ppg": 12.2,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 0.6
+    },
+    {
+      "acb_id": "30003991",
+      "name": "O. Moore",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "O. Moore",
+          "acb_id": "30003991",
+          "minutes": "22:13",
+          "points": 9,
+          "assists": 1,
+          "match_id": "104467",
+          "jornada": 1
+        },
+        {
+          "name": "O. Moore",
+          "acb_id": "30003991",
+          "minutes": "20:54",
+          "points": 14,
+          "assists": 2,
+          "match_id": "104474",
+          "jornada": 1
+        },
+        {
+          "name": "O. Moore",
+          "acb_id": "30003991",
+          "minutes": "17:23",
+          "points": 8,
+          "assists": 3,
+          "match_id": "104483",
+          "jornada": 1
+        },
+        {
+          "name": "O. Moore",
+          "acb_id": "30003991",
+          "minutes": "13:35",
+          "points": 2,
+          "assists": 4,
+          "match_id": "104493",
+          "jornada": 1
+        },
+        {
+          "name": "O. Moore",
+          "acb_id": "30003991",
+          "minutes": "16:41",
+          "points": 3,
+          "assists": 2,
+          "match_id": "104502",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 5,
+      "calculated_ppg": 7.2,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 2.4
+    },
+    {
+      "acb_id": "30001900",
+      "name": "D. Thompson",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "D. Thompson",
+          "acb_id": "30001900",
+          "minutes": "17:55",
+          "points": 16,
+          "assists": 4,
+          "match_id": "104467",
+          "jornada": 1
+        },
+        {
+          "name": "D. Thompson",
+          "acb_id": "30001900",
+          "minutes": "21:21",
+          "points": 12,
+          "assists": 8,
+          "match_id": "104474",
+          "jornada": 1
+        },
+        {
+          "name": "D. Thompson",
+          "acb_id": "30001900",
+          "minutes": "20:56",
+          "points": 14,
+          "assists": 6,
+          "match_id": "104483",
+          "jornada": 1
+        },
+        {
+          "name": "D. Thompson",
+          "acb_id": "30001900",
+          "minutes": "20:27",
+          "points": 7,
+          "assists": 3,
+          "match_id": "104493",
+          "jornada": 1
+        },
+        {
+          "name": "D. Thompson",
+          "acb_id": "30001900",
+          "minutes": "16:49",
+          "points": 8,
+          "assists": 3,
+          "match_id": "104502",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 5,
+      "calculated_ppg": 11.4,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 4.8
+    },
+    {
+      "acb_id": "30003361",
+      "name": "K. Punter",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "K. Punter",
+          "acb_id": "30003361",
+          "minutes": "21:57",
+          "points": 8,
+          "assists": 1,
+          "match_id": "104467",
+          "jornada": 1
+        },
+        {
+          "name": "K. Punter",
+          "acb_id": "30003361",
+          "minutes": "19:24",
+          "points": 14,
+          "assists": 1,
+          "match_id": "104473",
+          "jornada": 1
+        },
+        {
+          "name": "K. Punter",
+          "acb_id": "30003361",
+          "minutes": "28:58",
+          "points": 17,
+          "assists": 3,
+          "match_id": "104485",
+          "jornada": 1
+        },
+        {
+          "name": "K. Punter",
+          "acb_id": "30003361",
+          "minutes": "22:56",
+          "points": 10,
+          "assists": 2,
+          "match_id": "104487",
+          "jornada": 1
+        },
+        {
+          "name": "K. Punter",
+          "acb_id": "30003361",
+          "minutes": "22:53",
+          "points": 10,
+          "assists": 3,
+          "match_id": "104501",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 5,
+      "calculated_ppg": 11.8,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 2.0
+    },
+    {
+      "acb_id": "30003948",
+      "name": "M. Cale",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "M. Cale",
+          "acb_id": "30003948",
+          "minutes": "19:20",
+          "points": 5,
+          "assists": 0,
+          "match_id": "104467",
+          "jornada": 1
+        },
+        {
+          "name": "M. Cale",
+          "acb_id": "30003948",
+          "minutes": "18:19",
+          "points": 4,
+          "assists": 0,
+          "match_id": "104473",
+          "jornada": 1
+        },
+        {
+          "name": "M. Cale",
+          "acb_id": "30003948",
+          "minutes": "16:25",
+          "points": 4,
+          "assists": 0,
+          "match_id": "104485",
+          "jornada": 1
+        },
+        {
+          "name": "M. Cale",
+          "acb_id": "30003948",
+          "minutes": "26:27",
+          "points": 13,
+          "assists": 1,
+          "match_id": "104487",
+          "jornada": 1
+        },
+        {
+          "name": "M. Cale",
+          "acb_id": "30003948",
+          "minutes": "20:11",
+          "points": 2,
+          "assists": 0,
+          "match_id": "104501",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 5,
+      "calculated_ppg": 5.6,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 0.2
+    },
+    {
+      "acb_id": "30003977",
+      "name": "W. Clyburn",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "W. Clyburn",
+          "acb_id": "30003977",
+          "minutes": "24:05",
+          "points": 16,
+          "assists": 2,
+          "match_id": "104467",
+          "jornada": 1
+        },
+        {
+          "name": "W. Clyburn",
+          "acb_id": "30003977",
+          "minutes": "22:03",
+          "points": 7,
+          "assists": 2,
+          "match_id": "104473",
+          "jornada": 1
+        },
+        {
+          "name": "W. Clyburn",
+          "acb_id": "30003977",
+          "minutes": "28:36",
+          "points": 11,
+          "assists": 3,
+          "match_id": "104485",
+          "jornada": 1
+        },
+        {
+          "name": "W. Clyburn",
+          "acb_id": "30003977",
+          "minutes": "17:23",
+          "points": 21,
+          "assists": 0,
+          "match_id": "104487",
+          "jornada": 1
+        },
+        {
+          "name": "W. Clyburn",
+          "acb_id": "30003977",
+          "minutes": "28:49",
+          "points": 2,
+          "assists": 2,
+          "match_id": "104501",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 5,
+      "calculated_ppg": 11.4,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 1.8
+    },
+    {
+      "acb_id": "30000954",
+      "name": "J. Webb",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "J. Webb",
+          "acb_id": "30000954",
+          "minutes": "23:21",
+          "points": 9,
+          "assists": 1,
+          "match_id": "104470",
+          "jornada": 1
+        },
+        {
+          "name": "J. Webb",
+          "acb_id": "30000954",
+          "minutes": "20:07",
+          "points": 8,
+          "assists": 0,
+          "match_id": "104485",
+          "jornada": 1
+        },
+        {
+          "name": "J. Webb",
+          "acb_id": "30000954",
+          "minutes": "17:06",
+          "points": 10,
+          "assists": 0,
+          "match_id": "104488",
+          "jornada": 1
+        },
+        {
+          "name": "J. Webb",
+          "acb_id": "30000954",
+          "minutes": "13:19",
+          "points": 8,
+          "assists": 1,
+          "match_id": "104496",
+          "jornada": 1
+        },
+        {
+          "name": "J. Webb",
+          "acb_id": "30000954",
+          "minutes": "15:19",
+          "points": 10,
+          "assists": 0,
+          "match_id": "104507",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 5,
+      "calculated_ppg": 9.0,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 0.4
+    },
+    {
+      "acb_id": "20210670",
+      "name": "J. Shurna",
+      "nationality": "USA (matched)",
+      "game_log": [
+        {
+          "name": "J. Shurna",
+          "acb_id": "20210670",
+          "match_id": "104473",
+          "jornada": 1
+        },
+        {
+          "name": "J. Shurna",
+          "acb_id": "20210670",
+          "minutes": "11:12",
+          "points": 0,
+          "assists": 3,
+          "match_id": "104483",
+          "jornada": 1
+        },
+        {
+          "name": "J. Shurna",
+          "acb_id": "20210670",
+          "minutes": "20:01",
+          "points": 10,
+          "assists": 1,
+          "match_id": "104486",
+          "jornada": 1
+        },
+        {
+          "name": "J. Shurna",
+          "acb_id": "20210670",
+          "minutes": "19:48",
+          "points": 6,
+          "assists": 0,
+          "match_id": "104499",
+          "jornada": 1
+        },
+        {
+          "name": "J. Shurna",
+          "acb_id": "20210670",
+          "minutes": "09:08",
+          "points": 0,
+          "assists": 0,
+          "match_id": "104508",
+          "jornada": 1
+        }
+      ],
+      "games_tracked": 5,
+      "calculated_ppg": 3.2,
+      "calculated_rpg": 0.0,
+      "calculated_apg": 0.8
+    }
+  ]
+}

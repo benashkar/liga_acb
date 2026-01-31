@@ -39,5 +39,8 @@ output/json/unified_*.json
 # (avoids rate limiting issues with TheSportsDB API)
 !output/json/schedule_*.json
 
+# Keep "latest" files for dashboard
+!output/json/*_latest.json
+
 # Keep the directory
 !output/json/.gitkeep

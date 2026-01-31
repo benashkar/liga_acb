@@ -10,10 +10,11 @@ PURPOSE:
 DATA SOURCES COMBINED:
     - american_players_*.json: Basic player info from TheSportsDB
     - american_hometowns_found_*.json: Wikipedia hometown/college data
-    - schedule_*.json: Game schedule for upcoming games
+    - schedule_*.json: Game schedule for upcoming/past games
+    - acb_american_players_latest.json: Box score stats from ACB.com
 
 OUTPUT:
-    - unified_american_players_*.json: Complete player records
+    - unified_american_players_*.json: Complete player records with stats
     - american_players_summary_*.json: Lightweight version for dashboard list
 """
 
@@ -90,6 +91,63 @@ def save_json(data, filename):
     logger.info(f"Saved: {filepath}")
 
 
+def load_acb_stats():
+    """Load ACB.com box score stats for American players."""
+    output_dir = os.path.join(os.path.dirname(__file__), 'output', 'json')
+    filepath = os.path.join(output_dir, 'acb_american_players_latest.json')
+
+    if not os.path.exists(filepath):
+        logger.warning("No ACB stats file found. Run acb_scraper.py first.")
+        return {}
+
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            players = data.get('players', [])
+            logger.info(f"Loaded ACB stats for {len(players)} players")
+
+            # Build lookup by normalized name
+            lookup = {}
+            for p in players:
+                name = p.get('name', '').lower().strip()
+                # Handle abbreviated names like "T. Kalinoski" -> "kalinoski"
+                if '. ' in name:
+                    name = name.split('. ')[-1]
+                lookup[name] = p
+            return lookup
+    except Exception as e:
+        logger.warning(f"Error loading ACB stats: {e}")
+        return {}
+
+
+def normalize_name(name):
+    """Normalize player name for matching."""
+    if not name:
+        return ''
+    import unicodedata
+    name = unicodedata.normalize('NFKD', name).encode('ASCII', 'ignore').decode('ASCII')
+    return name.lower().strip()
+
+
+def match_acb_player(player_name, acb_lookup):
+    """Find matching ACB player by name."""
+    name_norm = normalize_name(player_name)
+
+    # Try exact match on last name
+    parts = name_norm.split()
+    if parts:
+        last_name = parts[-1]
+        if last_name in acb_lookup:
+            return acb_lookup[last_name]
+
+    # Try full name match
+    for acb_name, acb_data in acb_lookup.items():
+        if acb_name in name_norm or name_norm in acb_name:
+            return acb_data
+
+    return None
+
+
 def main():
     """Main entry point."""
     logger.info("=" * 60)
@@ -104,6 +162,7 @@ def main():
     players_data = load_latest_json('american_players_2*.json')  # Excludes summary files
     hometowns_data = load_latest_json('american_hometowns_found_*.json')
     schedule_data = load_best_schedule()  # Uses file with most games (handles rate limit fallback)
+    acb_stats = load_acb_stats()  # Box score stats from ACB.com
 
     if not players_data:
         logger.error("No player data found. Run daily_scraper.py first.")
@@ -186,6 +245,7 @@ def main():
 
     for player in players:
         code = player.get('code')
+        player_name = player.get('name', '')
 
         # Get hometown data if available
         hometown = hometown_lookup.get(code, {})
@@ -195,11 +255,27 @@ def main():
         past_games = past_by_team.get(team_name, [])  # All past games
         upcoming_games = upcoming_by_team.get(team_name, [])  # All upcoming games
 
+        # Get ACB box score stats if available
+        acb_player = match_acb_player(player_name, acb_stats)
+        game_log = []
+        games_played = 0
+        ppg = 0.0
+        rpg = 0.0
+        apg = 0.0
+
+        if acb_player:
+            game_log = acb_player.get('game_log', [])
+            games_played = acb_player.get('games_tracked', 0)
+            ppg = acb_player.get('calculated_ppg', 0.0)
+            rpg = acb_player.get('calculated_rpg', 0.0)
+            apg = acb_player.get('calculated_apg', 0.0)
+            logger.debug(f"  Matched ACB stats for {player_name}: {games_played} games, {ppg} PPG")
+
         # Build unified record
         unified = {
             # Basic info
             'code': code,
-            'name': player.get('name'),
+            'name': player_name,
             'team': team_name,
             'team_code': player.get('team_code'),
             'position': player.get('position'),
@@ -230,16 +306,12 @@ def main():
             'instagram': player.get('instagram'),
             'twitter': player.get('twitter'),
 
-            # Note: TheSportsDB free tier doesn't have box scores
-            # So we don't have game-by-game stats
-            'games_played': 0,
-            'ppg': 0.0,
-            'rpg': 0.0,
-            'apg': 0.0,
-            'total_points': 0,
-            'total_rebounds': 0,
-            'total_assists': 0,
-            'all_games': [],  # Would contain game log if we had box scores
+            # Stats from ACB.com box scores
+            'games_played': games_played,
+            'ppg': ppg,
+            'rpg': rpg,
+            'apg': apg,
+            'game_log': game_log,  # Individual game performances
 
             # Team schedule
             'past_games': past_games,
@@ -260,13 +332,16 @@ def main():
     # =========================================================================
     # Save Full Unified Data
     # =========================================================================
-    save_json({
+    unified_data = {
         'export_date': datetime.now().isoformat(),
         'season': '2025-26',
         'league': 'Liga ACB',
         'player_count': len(unified_players),
         'players': unified_players
-    }, f'unified_american_players_{timestamp}.json')
+    }
+
+    save_json(unified_data, f'unified_american_players_{timestamp}.json')
+    save_json(unified_data, 'unified_american_players_latest.json')  # For dashboard
 
     # =========================================================================
     # Save Summary Version (lighter weight for dashboard list)
@@ -294,13 +369,16 @@ def main():
             'apg': p['apg'],
         })
 
-    save_json({
+    summary_data = {
         'export_date': datetime.now().isoformat(),
         'season': '2025-26',
         'league': 'Liga ACB',
         'player_count': len(summary_players),
         'players': summary_players
-    }, f'american_players_summary_{timestamp}.json')
+    }
+
+    save_json(summary_data, f'american_players_summary_{timestamp}.json')
+    save_json(summary_data, 'american_players_summary_latest.json')  # For dashboard
 
     # =========================================================================
     # Summary

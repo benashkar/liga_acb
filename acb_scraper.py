@@ -496,7 +496,7 @@ def main():
     # Get IDs from confirmed Americans AND match by name from box scores
     american_ids = set(p.get('acb_id') for p in american_players if p.get('acb_id'))
 
-    for i, match in enumerate(matches[:50]):  # Get more games
+    for i, match in enumerate(matches):  # Get ALL games for complete history
         match_id = match['match_id']
         box_score = fetch_box_score(match_id)
 
@@ -524,8 +524,8 @@ def main():
                             'nationality': 'USA (matched)',
                         })
 
-        if (i + 1) % 10 == 0:
-            logger.info(f"  Progress: {i+1}/{min(30, len(matches))}")
+        if (i + 1) % 20 == 0:
+            logger.info(f"  Progress: {i+1}/{len(matches)}")
 
         time.sleep(0.5)
 
@@ -559,16 +559,29 @@ def main():
                 player['calculated_apg'] = round(total_ast / n, 1)
 
     # =========================================================================
-    # Step 6: Save Results
+    # Step 6: Build Schedule from Box Scores
     # =========================================================================
-    save_json({
-        'export_date': datetime.now().isoformat(),
-        'season': '2025-2026',
-        'league': 'Liga ACB',
-        'player_count': len(all_players),
-        'players': all_players
-    }, f'acb_rosters_{timestamp}.json')
+    logger.info("Building schedule from box score data...")
 
+    schedule_games = []
+    for match in matches:
+        match_id = match['match_id']
+        jornada = match.get('jornada')
+
+        # Find box score for this match to get teams
+        box = next((b for b in box_scores if b.get('match_id') == match_id), None)
+
+        schedule_games.append({
+            'game_id': match_id,
+            'round': jornada,
+            'played': box is not None,
+            'has_boxscore': box is not None,
+        })
+
+    # =========================================================================
+    # Step 7: Save Results
+    # =========================================================================
+    # Save with timestamp
     save_json({
         'export_date': datetime.now().isoformat(),
         'season': '2025-2026',
@@ -584,6 +597,23 @@ def main():
         'match_count': len(box_scores),
         'box_scores': box_scores
     }, f'acb_boxscores_{timestamp}.json')
+
+    # Also save "latest" versions for easy integration
+    save_json({
+        'export_date': datetime.now().isoformat(),
+        'season': '2025-2026',
+        'league': 'Liga ACB',
+        'player_count': len(american_players),
+        'players': american_players
+    }, 'acb_american_players_latest.json')
+
+    save_json({
+        'export_date': datetime.now().isoformat(),
+        'season': '2025-2026',
+        'league': 'Liga ACB',
+        'match_count': len(box_scores),
+        'box_scores': box_scores
+    }, 'acb_boxscores_latest.json')
 
     # =========================================================================
     # Summary
