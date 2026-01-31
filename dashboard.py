@@ -156,6 +156,12 @@ BASE_TEMPLATE = """
             background: #c8102e;
             color: white;
         }
+        .badge.win {
+            background: #28a745;
+        }
+        .badge.loss {
+            background: #dc3545;
+        }
         .note-box {
             background: #fff3cd;
             border: 1px solid #ffc107;
@@ -293,6 +299,36 @@ PLAYER_TEMPLATE = """
                 <td>{{ game.opponent }}</td>
                 <td>{{ game.home_away }}</td>
                 <td>{{ game.round or 'N/A' }}</td>
+                <td>{{ game.venue or 'N/A' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+
+{% if player.past_games %}
+<div class="player-card">
+    <h3>Past Games</h3>
+    <table class="game-log">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Opponent</th>
+                <th>H/A</th>
+                <th>Result</th>
+                <th>Score</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for game in player.past_games %}
+            <tr>
+                <td>{{ game.date }}</td>
+                <td>{{ game.opponent }}</td>
+                <td>{{ game.home_away }}</td>
+                <td><span class="badge {% if game.result == 'W' %}win{% else %}loss{% endif %}">{{ game.result }}</span></td>
+                <td>{{ game.team_score }} - {{ game.opponent_score }}</td>
                 <td>{{ game.venue or 'N/A' }}</td>
             </tr>
             {% endfor %}
