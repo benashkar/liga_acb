@@ -75,19 +75,28 @@ liga_acb/
     └── json/                 # JSON data files
 ```
 
-## API Limitations
+## Data Sources & Limitations
 
-TheSportsDB free tier provides:
+### TheSportsDB (Primary Source)
+Provides:
 - Team information and logos
 - Player rosters with biographical data
 - Game schedules and final scores
 
-It does NOT provide:
+Does NOT provide:
 - Box scores with player statistics
 - Play-by-play data
-- Live game updates
 
-For full box score data, consider upgrading to TheSportsDB Patreon tier or using API-Basketball.
+### Eurobasket.com (Box Scores - Limited)
+The scraper attempts to fetch box scores from eurobasket.com, but the site uses
+data obfuscation to prevent scraping. Box score functionality is included but
+may not return accurate data.
+
+### Alternative Options for Box Scores
+For accurate player game statistics, consider:
+- **API-Basketball** (api-basketball.com) - Paid API with comprehensive data
+- **TheSportsDB Patreon** - Premium tier includes event statistics
+- **Manual data entry** - For critical games
 
 ## License
 

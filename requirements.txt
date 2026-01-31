@@ -5,6 +5,8 @@
 
 # CORE DEPENDENCIES
 requests>=2.31.0          # HTTP requests to APIs
+beautifulsoup4>=4.12.0    # HTML parsing for eurobasket.com scraping
+lxml>=4.9.0               # Fast HTML parser
 
 # WEB DASHBOARD
 flask>=3.0.0              # Lightweight web framework for dashboard
