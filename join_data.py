@@ -48,8 +48,22 @@ def load_latest_json(pattern):
 
 
 def load_best_schedule():
-    """Load the schedule file with the most games (handles rate limiting fallback)."""
+    """Load the schedule file with the most games. Prefers ACB.com data over TheSportsDB."""
     output_dir = os.path.join(os.path.dirname(__file__), 'output', 'json')
+
+    # First, try ACB schedule (more complete)
+    acb_schedule = os.path.join(output_dir, 'acb_schedule_latest.json')
+    if os.path.exists(acb_schedule):
+        try:
+            with open(acb_schedule, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                game_count = len(data.get('games', []))
+                logger.info(f"Loading ACB schedule: acb_schedule_latest.json ({game_count} games)")
+                return data
+        except Exception as e:
+            logger.warning(f"Error reading ACB schedule: {e}")
+
+    # Fallback to TheSportsDB schedule files
     files = sorted(glob(os.path.join(output_dir, 'schedule_*.json')))
 
     if not files:
@@ -148,6 +162,69 @@ def match_acb_player(player_name, acb_lookup):
     return None
 
 
+# Team name mapping from ACB format to TheSportsDB names
+ACB_TEAM_MAPPING = {
+    'morabanc andorra': 'BC Andorra',
+    'andorra': 'BC Andorra',
+    'unicaja': 'Baloncesto Málaga',
+    'malaga': 'Baloncesto Málaga',
+    'surne bilbao': 'Bilbao Basket',
+    'bilbao': 'Bilbao Basket',
+    'san pablo burgos': 'CB San Pablo Burgos',
+    'burgos': 'CB San Pablo Burgos',
+    'basquet girona': 'Basquet Girona',
+    'girona': 'Basquet Girona',
+    'tenerife': 'CB 1939 Canarias',
+    'la laguna': 'CB 1939 Canarias',
+    'baxi manresa': 'Basquet Manresa',
+    'manresa': 'Basquet Manresa',
+    'hiopos lleida': 'Hiopos Lleida',
+    'lleida': 'Hiopos Lleida',
+    'rio breogan': 'Río Breogán',
+    'breogan': 'Río Breogán',
+    'coviran granada': 'Fundación CB Granada',
+    'granada': 'Fundación CB Granada',
+    'joventut': 'Joventut Badalona',
+    'badalona': 'Joventut Badalona',
+    'valencia': 'Valencia Basket',
+    'baskonia': 'Baskonia',
+    'real madrid': 'Real Madrid Baloncesto',
+    'madrid': 'Real Madrid Baloncesto',
+    'barcelona': 'FC Barcelona Basquet',
+    'ucam murcia': 'CB Murcia',
+    'murcia': 'CB Murcia',
+    'gran canaria': 'CB Gran Canaria',
+    'dreamland': 'CB Gran Canaria',
+    'casademont zaragoza': 'Basket Zaragoza',
+    'zaragoza': 'Basket Zaragoza',
+}
+
+
+def normalize_acb_team_name(raw_name):
+    """Normalize garbled ACB team name to TheSportsDB format."""
+    if not raw_name:
+        return None
+
+    # Convert to lowercase for matching
+    name_lower = raw_name.lower()
+
+    # Try to match known team patterns
+    for pattern, standard_name in ACB_TEAM_MAPPING.items():
+        if pattern in name_lower:
+            return standard_name
+
+    # Fallback: try to extract clean name from garbled format
+    # Format is often: [CODE][FullName][ShortName]
+    # e.g., "MBAMoraBanc AndorraMoraBanc And"
+    import re
+    # Try to find repeated substring pattern
+    match = re.search(r'[A-Z]{2,3}(.+?)(?:\1|$)', raw_name)
+    if match:
+        return match.group(1).strip()
+
+    return raw_name
+
+
 def main():
     """Main entry point."""
     logger.info("=" * 60)
@@ -184,9 +261,21 @@ def main():
     past_by_team = {}
     upcoming_by_team = {}
     if schedule_data:
+        # Check if this is ACB schedule (needs team name normalization)
+        is_acb_schedule = schedule_data.get('source') == 'acb.com'
+
         for game in schedule_data.get('games', []):
-            home_team = game.get('home_team')
-            away_team = game.get('away_team')
+            home_team_raw = game.get('home_team')
+            away_team_raw = game.get('away_team')
+
+            # Normalize team names if ACB schedule
+            if is_acb_schedule:
+                home_team = normalize_acb_team_name(home_team_raw)
+                away_team = normalize_acb_team_name(away_team_raw)
+            else:
+                home_team = home_team_raw
+                away_team = away_team_raw
+
             played = game.get('played', False)
 
             game_info = {
@@ -229,11 +318,11 @@ def main():
                     'result': 'W' if played and game.get('away_score', 0) > game.get('home_score', 0) else ('L' if played else None),
                 })
 
-        # Sort each team's games by date
+        # Sort each team's games by date (handle None dates)
         for team in past_by_team:
-            past_by_team[team].sort(key=lambda x: x.get('date', ''), reverse=True)  # Most recent first
+            past_by_team[team].sort(key=lambda x: x.get('date') or '', reverse=True)  # Most recent first
         for team in upcoming_by_team:
-            upcoming_by_team[team].sort(key=lambda x: x.get('date', ''))
+            upcoming_by_team[team].sort(key=lambda x: x.get('date') or '')
 
         logger.info(f"Built past games for {len(past_by_team)} teams")
         logger.info(f"Built upcoming games for {len(upcoming_by_team)} teams")

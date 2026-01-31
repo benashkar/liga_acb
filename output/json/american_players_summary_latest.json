@@ -1,5 +1,5 @@
 {
-  "export_date": "2026-01-31T09:52:00.319724",
+  "export_date": "2026-01-31T10:27:23.798381",
   "season": "2025-26",
   "league": "Liga ACB",
   "player_count": 28,
@@ -99,10 +99,10 @@
       "college": "Auburn",
       "high_school": "Westlake",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/eqzfj51709465852.jpg",
-      "games_played": 3,
-      "ppg": 5.3,
+      "games_played": 10,
+      "ppg": 6.0,
       "rpg": 0.0,
-      "apg": 0.7
+      "apg": 0.8
     },
     {
       "code": "34176324",
@@ -139,10 +139,10 @@
       "college": "Memphis",
       "high_school": "Harker Heights",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/knp6lf1759319345.jpg",
-      "games_played": 4,
-      "ppg": 6.2,
+      "games_played": 13,
+      "ppg": 5.2,
       "rpg": 0.0,
-      "apg": 0.0
+      "apg": 0.2
     },
     {
       "code": "34193811",
@@ -159,10 +159,10 @@
       "college": "Tennessee",
       "high_school": "Blackman",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/3pi26u1633288654.jpg",
-      "games_played": 5,
-      "ppg": 11.4,
+      "games_played": 15,
+      "ppg": 9.4,
       "rpg": 0.0,
-      "apg": 4.8
+      "apg": 3.7
     },
     {
       "code": "34233101",
@@ -219,10 +219,10 @@
       "college": "Wisconsin",
       "high_school": "Rockridge",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/zunefo1700945948.jpg",
-      "games_played": 0,
-      "ppg": 0.0,
+      "games_played": 9,
+      "ppg": 12.9,
       "rpg": 0.0,
-      "apg": 0.0
+      "apg": 1.8
     },
     {
       "code": "34348471",
@@ -239,10 +239,10 @@
       "college": "Richmond",
       "high_school": "Sherando",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/nqf4gw1753264294.jpg",
-      "games_played": 6,
-      "ppg": 11.2,
+      "games_played": 15,
+      "ppg": 7.1,
       "rpg": 0.0,
-      "apg": 2.0
+      "apg": 1.5
     },
     {
       "code": "34165752",
@@ -279,10 +279,10 @@
       "college": "North Idaho",
       "high_school": "Curtis Baptist",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/ok73fv1700948962.jpg",
-      "games_played": 5,
-      "ppg": 9.0,
+      "games_played": 15,
+      "ppg": 9.1,
       "rpg": 0.0,
-      "apg": 0.4
+      "apg": 0.5
     },
     {
       "code": "34173126",
@@ -299,10 +299,10 @@
       "college": "Northwestern",
       "high_school": "Glenbard West",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/9xy2q21606039685.jpg",
-      "games_played": 5,
-      "ppg": 3.2,
+      "games_played": 16,
+      "ppg": 6.1,
       "rpg": 0.0,
-      "apg": 0.8
+      "apg": 0.6
     },
     {
       "code": "34233100",
@@ -319,10 +319,10 @@
       "college": "Seton Hill",
       "high_school": "DeMatha Catholic",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/70zb7d1714388814.jpg",
-      "games_played": 4,
-      "ppg": 11.0,
+      "games_played": 13,
+      "ppg": 10.0,
       "rpg": 0.0,
-      "apg": 2.8
+      "apg": 2.2
     },
     {
       "code": "34217968",
@@ -339,8 +339,8 @@
       "college": "State Fair CC",
       "high_school": "Salesian",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/qc411f1683398824.jpg",
-      "games_played": 5,
-      "ppg": 11.8,
+      "games_played": 17,
+      "ppg": 12.5,
       "rpg": 0.0,
       "apg": 2.0
     },
@@ -359,10 +359,10 @@
       "college": "Iowa State",
       "high_school": "Onalaska",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/g0xz601710583822.jpg",
-      "games_played": 5,
-      "ppg": 12.4,
+      "games_played": 14,
+      "ppg": 14.6,
       "rpg": 0.0,
-      "apg": 1.8
+      "apg": 1.5
     },
     {
       "code": "34219749",
@@ -379,10 +379,10 @@
       "college": "Oregon",
       "high_school": "Brewster Academy",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/dvkevt1688808757.jpg",
-      "games_played": 0,
-      "ppg": 0.0,
+      "games_played": 8,
+      "ppg": 9.6,
       "rpg": 0.0,
-      "apg": 0.0
+      "apg": 0.2
     },
     {
       "code": "34433190",
@@ -399,10 +399,10 @@
       "college": "Seton Hall",
       "high_school": "Appoquinimink",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/usc23m1765618541.jpg",
-      "games_played": 5,
-      "ppg": 5.6,
+      "games_played": 16,
+      "ppg": 6.0,
       "rpg": 0.0,
-      "apg": 0.2
+      "apg": 0.8
     },
     {
       "code": "34216251",
@@ -419,10 +419,10 @@
       "college": "Wisconsin",
       "high_school": "Lakeville North",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/wqyb5t1767616737.jpg",
-      "games_played": 5,
-      "ppg": 12.2,
+      "games_played": 17,
+      "ppg": 9.8,
       "rpg": 0.0,
-      "apg": 0.6
+      "apg": 0.7
     },
     {
       "code": "34172120",
@@ -459,10 +459,10 @@
       "college": "San Jose State",
       "high_school": "Pasadena",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/so6kai1767617005.jpg",
-      "games_played": 5,
-      "ppg": 7.2,
+      "games_played": 15,
+      "ppg": 8.9,
       "rpg": 0.0,
-      "apg": 2.4
+      "apg": 2.5
     },
     {
       "code": "34176308",
@@ -519,10 +519,10 @@
       "college": "Florida State",
       "high_school": "Chipley",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/3skg181688751195.jpg",
-      "games_played": 6,
-      "ppg": 11.0,
+      "games_played": 17,
+      "ppg": 12.5,
       "rpg": 0.0,
-      "apg": 2.2
+      "apg": 1.9
     },
     {
       "code": "34165782",
@@ -559,10 +559,10 @@
       "college": "Davidson",
       "high_school": "Olathe East",
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/95db4y1619819099.jpg",
-      "games_played": 6,
-      "ppg": 4.7,
+      "games_played": 16,
+      "ppg": 5.8,
       "rpg": 0.0,
-      "apg": 2.2
+      "apg": 2.4
     }
   ]
 }

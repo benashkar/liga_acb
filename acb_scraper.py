@@ -437,11 +437,11 @@ def fetch_box_score(match_id):
 def fetch_season_matches():
     """
     Fetch list of all matches for the current season.
-    Returns list of match IDs.
+    Returns list of match details including teams, dates, scores.
     """
     matches = []
 
-    # Fetch calendar page
+    # Fetch calendar page for each jornada
     for jornada in range(1, 35):  # 34 regular season rounds
         url = f"{ACB_BASE_URL}/calendario/index/temporada_id/{SEASON_ID}/competicion_id/1/jornada_numero/{jornada}"
         html = fetch_page(url)
@@ -451,17 +451,73 @@ def fetch_season_matches():
 
         soup = BeautifulSoup(html, 'html.parser')
 
-        # Find match links
-        for link in soup.find_all('a', href=re.compile(r'/partido/estadisticas/id/\d+')):
-            href = link.get('href', '')
-            match_id_match = re.search(r'/partido/estadisticas/id/(\d+)', href)
-            if match_id_match:
-                match_id = match_id_match.group(1)
-                if match_id not in [m['match_id'] for m in matches]:
-                    matches.append({
-                        'match_id': match_id,
-                        'jornada': jornada,
-                    })
+        # Find all game containers
+        game_containers = soup.find_all('div', class_='partido')
+        if not game_containers:
+            game_containers = soup.find_all('article', class_='partido')
+
+        for container in game_containers:
+            match_data = {
+                'jornada': jornada,
+                'round': str(jornada),
+            }
+
+            # Find match ID from stats link
+            stats_link = container.find('a', href=re.compile(r'/partido/estadisticas/id/\d+'))
+            if stats_link:
+                href = stats_link.get('href', '')
+                match_id_match = re.search(r'/partido/estadisticas/id/(\d+)', href)
+                if match_id_match:
+                    match_data['match_id'] = match_id_match.group(1)
+
+            # Find team names
+            team_elements = container.find_all('span', class_='nombre_equipo')
+            if not team_elements:
+                team_elements = container.find_all('div', class_='equipo')
+            if len(team_elements) >= 2:
+                match_data['home_team'] = team_elements[0].get_text(strip=True)
+                match_data['away_team'] = team_elements[1].get_text(strip=True)
+
+            # Find scores
+            score_elements = container.find_all('span', class_='resultado')
+            if not score_elements:
+                score_elements = container.find_all('div', class_='resultado')
+            if len(score_elements) >= 2:
+                try:
+                    match_data['home_score'] = int(score_elements[0].get_text(strip=True))
+                    match_data['away_score'] = int(score_elements[1].get_text(strip=True))
+                    match_data['played'] = True
+                except (ValueError, TypeError):
+                    match_data['played'] = False
+            else:
+                match_data['played'] = False
+
+            # Find date
+            date_element = container.find('span', class_='fecha')
+            if not date_element:
+                date_element = container.find('div', class_='fecha')
+            if date_element:
+                match_data['date_str'] = date_element.get_text(strip=True)
+
+            # Only add if we have a match_id or team names
+            if match_data.get('match_id') or (match_data.get('home_team') and match_data.get('away_team')):
+                # Avoid duplicates
+                if match_data.get('match_id') not in [m.get('match_id') for m in matches]:
+                    matches.append(match_data)
+
+        # Also look for match links directly (fallback)
+        if not game_containers:
+            for link in soup.find_all('a', href=re.compile(r'/partido/estadisticas/id/\d+')):
+                href = link.get('href', '')
+                match_id_match = re.search(r'/partido/estadisticas/id/(\d+)', href)
+                if match_id_match:
+                    match_id = match_id_match.group(1)
+                    if match_id not in [m.get('match_id') for m in matches]:
+                        matches.append({
+                            'match_id': match_id,
+                            'jornada': jornada,
+                            'round': str(jornada),
+                        })
 
         logger.info(f"  Jornada {jornada}: {len(matches)} total matches")
         time.sleep(0.3)
@@ -497,7 +553,9 @@ def main():
     american_ids = set(p.get('acb_id') for p in american_players if p.get('acb_id'))
 
     for i, match in enumerate(matches):  # Get ALL games for complete history
-        match_id = match['match_id']
+        match_id = match.get('match_id')
+        if not match_id:
+            continue  # Skip matches without box score links (future games)
         box_score = fetch_box_score(match_id)
 
         if box_score and box_score.get('players'):
@@ -561,22 +619,32 @@ def main():
     # =========================================================================
     # Step 6: Build Schedule from Box Scores
     # =========================================================================
-    logger.info("Building schedule from box score data...")
+    logger.info("Building schedule from match data...")
 
+    # Build schedule with full details from matches
     schedule_games = []
     for match in matches:
-        match_id = match['match_id']
-        jornada = match.get('jornada')
+        match_id = match.get('match_id')
 
-        # Find box score for this match to get teams
-        box = next((b for b in box_scores if b.get('match_id') == match_id), None)
+        # Check if we have a box score for this match
+        box = next((b for b in box_scores if b.get('match_id') == match_id), None) if match_id else None
 
-        schedule_games.append({
+        game_data = {
             'game_id': match_id,
-            'round': jornada,
-            'played': box is not None,
+            'round': match.get('round') or str(match.get('jornada', '')),
+            'home_team': match.get('home_team'),
+            'away_team': match.get('away_team'),
+            'home_score': match.get('home_score'),
+            'away_score': match.get('away_score'),
+            'date': match.get('date_str'),
+            'played': match.get('played', box is not None),
             'has_boxscore': box is not None,
-        })
+        }
+        schedule_games.append(game_data)
+
+    played_count = sum(1 for g in schedule_games if g.get('played'))
+    upcoming_count = len(schedule_games) - played_count
+    logger.info(f"Schedule: {len(schedule_games)} games ({played_count} played, {upcoming_count} upcoming)")
 
     # =========================================================================
     # Step 7: Save Results
@@ -598,6 +666,16 @@ def main():
         'box_scores': box_scores
     }, f'acb_boxscores_{timestamp}.json')
 
+    # Save schedule from ACB.com
+    save_json({
+        'export_date': datetime.now().isoformat(),
+        'season': '2025-2026',
+        'league': 'Liga ACB',
+        'source': 'acb.com',
+        'game_count': len(schedule_games),
+        'games': schedule_games
+    }, f'acb_schedule_{timestamp}.json')
+
     # Also save "latest" versions for easy integration
     save_json({
         'export_date': datetime.now().isoformat(),
@@ -614,6 +692,15 @@ def main():
         'match_count': len(box_scores),
         'box_scores': box_scores
     }, 'acb_boxscores_latest.json')
+
+    save_json({
+        'export_date': datetime.now().isoformat(),
+        'season': '2025-2026',
+        'league': 'Liga ACB',
+        'source': 'acb.com',
+        'game_count': len(schedule_games),
+        'games': schedule_games
+    }, 'acb_schedule_latest.json')
 
     # =========================================================================
     # Summary
