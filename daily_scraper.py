@@ -162,26 +162,42 @@ def save_json(data, filename):
     return filepath
 
 
-def api_get(endpoint, params=None):
+def api_get(endpoint, params=None, retries=3):
     """
-    Make a GET request to TheSportsDB API.
+    Make a GET request to TheSportsDB API with retry logic.
 
     PARAMETERS:
         endpoint (str): The API endpoint (e.g., '/lookup_all_teams.php')
         params (dict, optional): Query parameters
+        retries (int): Number of retry attempts
 
     RETURNS:
         dict or None: The JSON response, or None if error
     """
     url = f"{BASE_URL}{endpoint}"
 
-    try:
-        resp = requests.get(url, params=params, timeout=30)
-        resp.raise_for_status()
-        return resp.json()
-    except Exception as e:
-        logger.error(f"API error {endpoint}: {e}")
-        return None
+    for attempt in range(retries):
+        try:
+            # Add delay between requests to avoid rate limiting
+            if attempt > 0:
+                delay = 2 ** attempt  # Exponential backoff: 2, 4, 8 seconds
+                logger.info(f"  Retry {attempt + 1}/{retries} after {delay}s delay...")
+                time.sleep(delay)
+
+            resp = requests.get(url, params=params, timeout=30)
+            resp.raise_for_status()
+            data = resp.json()
+
+            # Add small delay after successful request to avoid rate limiting
+            time.sleep(0.5)
+            return data
+        except Exception as e:
+            logger.warning(f"API attempt {attempt + 1}/{retries} failed for {endpoint}: {e}")
+            if attempt == retries - 1:
+                logger.error(f"API error {endpoint}: {e}")
+                return None
+
+    return None
 
 
 # =============================================================================
@@ -288,15 +304,19 @@ def fetch_schedule():
     """
     logger.info("Fetching schedule...")
 
+    # Try current season
     data = api_get('/eventsseason.php', {'id': LEAGUE_ID, 's': SEASON})
 
     if data and data.get('events'):
         games = data.get('events', [])
-        logger.info(f"  Found {len(games)} games")
+        logger.info(f"  Found {len(games)} games for season {SEASON}")
         return games
+    else:
+        logger.warning(f"  No events found for season {SEASON}")
 
     # Try previous season format if current fails
     alt_season = '2024-2025'
+    logger.info(f"  Trying alternate season {alt_season}...")
     data = api_get('/eventsseason.php', {'id': LEAGUE_ID, 's': alt_season})
 
     if data and data.get('events'):
@@ -304,6 +324,7 @@ def fetch_schedule():
         logger.info(f"  Found {len(games)} games (season {alt_season})")
         return games
 
+    logger.error("  No schedule data found from any season!")
     return []
 
 
