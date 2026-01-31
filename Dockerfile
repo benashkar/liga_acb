@@ -37,12 +37,10 @@ COPY . .
 RUN mkdir -p /app/output/json /app/logs
 
 # Pre-populate data during build
-RUN echo "=== Building: Fetching player data ===" && \
-    python daily_scraper.py && \
-    echo "=== Building: Looking up hometowns ===" && \
-    (python hometown_lookup_fixed.py || true) && \
-    echo "=== Building: Joining data ===" && \
-    python join_data.py && \
+# Note: ACB scraper takes ~10 mins, so we rely on committed JSON files
+# The daily GitHub Action will refresh the data
+RUN echo "=== Building: Using committed JSON data ===" && \
+    ls -la /app/output/json/*_latest.json 2>/dev/null || echo "No latest files" && \
     echo "=== Build complete: Data ready ==="
 
 # Environment variables
