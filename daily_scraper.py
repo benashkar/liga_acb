@@ -297,35 +297,48 @@ def fetch_all_players(clubs):
 
 def fetch_schedule():
     """
-    Fetch the game schedule for the current season.
+    Fetch the game schedule combining multiple API endpoints for complete data.
 
     RETURNS:
         list: A list of game dictionaries
     """
     logger.info("Fetching schedule...")
+    all_games = {}  # Use dict to dedupe by game ID
 
-    # Try current season
+    # Fetch from season endpoint
     data = api_get('/eventsseason.php', {'id': LEAGUE_ID, 's': SEASON})
-
     if data and data.get('events'):
-        games = data.get('events', [])
-        logger.info(f"  Found {len(games)} games for season {SEASON}")
-        return games
-    else:
-        logger.warning(f"  No events found for season {SEASON}")
+        for game in data['events']:
+            game_id = game.get('idEvent')
+            if game_id:
+                all_games[game_id] = game
+        logger.info(f"  Season endpoint: {len(data['events'])} games")
 
-    # Try previous season format if current fails
-    alt_season = '2024-2025'
-    logger.info(f"  Trying alternate season {alt_season}...")
-    data = api_get('/eventsseason.php', {'id': LEAGUE_ID, 's': alt_season})
-
+    # Fetch recent past games (more current data)
+    data = api_get('/eventspastleague.php', {'id': LEAGUE_ID})
     if data and data.get('events'):
-        games = data.get('events', [])
-        logger.info(f"  Found {len(games)} games (season {alt_season})")
-        return games
+        for game in data['events']:
+            game_id = game.get('idEvent')
+            if game_id:
+                all_games[game_id] = game
+        logger.info(f"  Past events endpoint: {len(data['events'])} games")
 
-    logger.error("  No schedule data found from any season!")
-    return []
+    # Fetch upcoming games
+    data = api_get('/eventsnextleague.php', {'id': LEAGUE_ID})
+    if data and data.get('events'):
+        for game in data['events']:
+            game_id = game.get('idEvent')
+            if game_id:
+                all_games[game_id] = game
+        logger.info(f"  Next events endpoint: {len(data['events'])} games")
+
+    games = list(all_games.values())
+    logger.info(f"  Total unique games: {len(games)}")
+
+    if not games:
+        logger.error("  No schedule data found!")
+
+    return games
 
 
 # =============================================================================
