@@ -1,9 +1,9 @@
 {
-  "export_date": "2026-01-31T12:13:35.674314",
+  "export_date": "2026-01-31T21:07:12.681078",
   "season": "2025-2026",
   "league": "Liga ACB",
   "source": "acb.com",
-  "game_count": 153,
+  "game_count": 156,
   "games": [
     {
       "game_id": "104459",
@@ -1684,6 +1684,39 @@
       "away_team": "LLTLa Laguna TenerifeLa Laguna TFE",
       "home_score": 82,
       "away_score": 89,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104612",
+      "round": "1",
+      "home_team": "COVCoviran GranadaCoviran Granada",
+      "away_team": "BRERío BreogánRío Breogán",
+      "home_score": 64,
+      "away_score": 83,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104613",
+      "round": "1",
+      "home_team": "MBAMoraBanc AndorraMoraBanc And",
+      "away_team": "DGCDreamland Gran CanariaDreamland GC",
+      "home_score": 94,
+      "away_score": 78,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104614",
+      "round": "1",
+      "home_team": "SBBSurne BilbaoSurne Bilbao",
+      "away_team": "JOVJoventut BadalonaJoventut",
+      "home_score": 80,
+      "away_score": 76,
       "date": null,
       "played": true,
       "has_boxscore": true
