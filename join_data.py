@@ -46,6 +46,38 @@ def load_latest_json(pattern):
         return json.load(f)
 
 
+def load_best_schedule():
+    """Load the schedule file with the most games (handles rate limiting fallback)."""
+    output_dir = os.path.join(os.path.dirname(__file__), 'output', 'json')
+    files = sorted(glob(os.path.join(output_dir, 'schedule_*.json')))
+
+    if not files:
+        logger.warning("No schedule files found")
+        return None
+
+    # Find the file with the most games
+    best_file = None
+    best_count = 0
+
+    for filepath in files:
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                game_count = len(data.get('games', []))
+                if game_count > best_count:
+                    best_count = game_count
+                    best_file = filepath
+        except Exception as e:
+            logger.warning(f"Error reading {filepath}: {e}")
+
+    if best_file:
+        logger.info(f"Loading schedule: {os.path.basename(best_file)} ({best_count} games)")
+        with open(best_file, 'r', encoding='utf-8') as f:
+            return json.load(f)
+
+    return None
+
+
 def save_json(data, filename):
     """Save data to a JSON file."""
     output_dir = os.path.join(os.path.dirname(__file__), 'output', 'json')
@@ -71,7 +103,7 @@ def main():
     # =========================================================================
     players_data = load_latest_json('american_players_2*.json')  # Excludes summary files
     hometowns_data = load_latest_json('american_hometowns_found_*.json')
-    schedule_data = load_latest_json('schedule_*.json')
+    schedule_data = load_best_schedule()  # Uses file with most games (handles rate limit fallback)
 
     if not players_data:
         logger.error("No player data found. Run daily_scraper.py first.")

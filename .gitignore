@@ -28,9 +28,16 @@ logs/
 .env
 .env.local
 
-# Keep output directory structure but ignore JSON files
+# Keep output directory structure but ignore most JSON files
 # (they get regenerated on each scrape)
-output/json/*.json
+output/json/american_*.json
+output/json/clubs_*.json
+output/json/players_*.json
+output/json/unified_*.json
 
-# But keep the directory
+# Keep schedule files in git for faster builds
+# (avoids rate limiting issues with TheSportsDB API)
+!output/json/schedule_*.json
+
+# Keep the directory
 !output/json/.gitkeep
