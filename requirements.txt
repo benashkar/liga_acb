@@ -1,0 +1,14 @@
+# =============================================================================
+# PYTHON DEPENDENCIES FOR LIGA ACB SCRAPER
+# =============================================================================
+# Install all dependencies with: pip install -r requirements.txt
+
+# CORE DEPENDENCIES
+requests>=2.31.0          # HTTP requests to APIs
+
+# WEB DASHBOARD
+flask>=3.0.0              # Lightweight web framework for dashboard
+gunicorn>=21.0.0          # Production WSGI server (for deployment)
+
+# UTILITIES
+python-dateutil>=2.8.0    # Date parsing utilities
