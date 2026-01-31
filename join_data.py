@@ -105,6 +105,33 @@ def save_json(data, filename):
     logger.info(f"Saved: {filepath}")
 
 
+def load_boxscore_dates():
+    """Load dates from ACB box scores for game_log enrichment."""
+    output_dir = os.path.join(os.path.dirname(__file__), 'output', 'json')
+    filepath = os.path.join(output_dir, 'acb_boxscores_latest.json')
+
+    if not os.path.exists(filepath):
+        return {}
+
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            lookup = {}
+            for box in data.get('box_scores', []):
+                match_id = box.get('match_id')
+                if match_id:
+                    lookup[match_id] = {
+                        'date': box.get('date'),
+                        'home_team': box.get('home_team'),
+                        'away_team': box.get('away_team'),
+                    }
+            logger.info(f"Loaded dates for {len(lookup)} box scores")
+            return lookup
+    except Exception as e:
+        logger.warning(f"Error loading box score dates: {e}")
+        return {}
+
+
 def load_acb_stats():
     """Load ACB.com box score stats for American players."""
     output_dir = os.path.join(os.path.dirname(__file__), 'output', 'json')
@@ -240,6 +267,7 @@ def main():
     hometowns_data = load_latest_json('american_hometowns_found_*.json')
     schedule_data = load_best_schedule()  # Uses file with most games (handles rate limit fallback)
     acb_stats = load_acb_stats()  # Box score stats from ACB.com
+    boxscore_dates = load_boxscore_dates()  # Dates from box scores (schedule may have null dates)
 
     if not players_data:
         logger.error("No player data found. Run daily_scraper.py first.")
@@ -407,7 +435,9 @@ def main():
                     else:
                         entry['opponent'] = f"{home} vs {away}"
 
-                entry['date'] = game_info.get('date')
+                # Get date from boxscore_dates (schedule dates may be null)
+                box_info = boxscore_dates.get(match_id, {})
+                entry['date'] = box_info.get('date') or game_info.get('date')
                 entry['round'] = game_info.get('round') or entry.get('jornada')
 
             game_log = raw_game_log

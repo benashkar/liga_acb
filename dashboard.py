@@ -393,8 +393,8 @@ PLAYER_TEMPLATE = """
                 <td class="stats">{{ game.points or '-' }}</td>
                 <td>{{ game.rebounds or '-' }}</td>
                 <td>{{ game.assists or '-' }}</td>
-                <td>{{ game.fg_made or 0 }}-{{ game.fg_attempted or 0 }}</td>
-                <td>{{ game.three_made or 0 }}-{{ game.three_attempted or 0 }}</td>
+                <td>{{ (game.fg2_made or 0) + (game.fg3_made or 0) }}-{{ (game.fg2_attempted or 0) + (game.fg3_attempted or 0) }}</td>
+                <td>{{ game.fg3_made or 0 }}-{{ game.fg3_attempted or 0 }}</td>
                 <td>{{ game.ft_made or 0 }}-{{ game.ft_attempted or 0 }}</td>
             </tr>
             {% endfor %}

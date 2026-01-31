@@ -339,6 +339,19 @@ def fetch_player_stats(player_id):
     return stats
 
 
+def parse_euro_date(date_str):
+    """Convert European date DD/MM/YYYY to YYYY-MM-DD format."""
+    if not date_str:
+        return None
+    # Handle various formats: DD/MM/YYYY, DD-MM-YYYY, DD.MM.YYYY
+    import re
+    match = re.search(r'(\d{1,2})[/\-\.](\d{1,2})[/\-\.](\d{4})', date_str)
+    if match:
+        day, month, year = match.groups()
+        return f"{year}-{month.zfill(2)}-{day.zfill(2)}"
+    return None
+
+
 def fetch_box_score(match_id):
     """
     Fetch box score for a single game from ACB website.
@@ -352,8 +365,27 @@ def fetch_box_score(match_id):
     soup = BeautifulSoup(html, 'html.parser')
     box_score = {
         'match_id': match_id,
-        'players': []
+        'players': [],
+        'date': None,
+        'home_team': None,
+        'away_team': None,
     }
+
+    # Extract date from page (format: DD/MM/YYYY)
+    # Look for date in various places
+    date_pattern = re.compile(r'\d{1,2}/\d{1,2}/\d{4}')
+    page_text = soup.get_text()
+    date_match = date_pattern.search(page_text)
+    if date_match:
+        box_score['date'] = parse_euro_date(date_match.group())
+
+    # Extract team names from header
+    team_elements = soup.find_all('span', class_='nombre_equipo')
+    if not team_elements:
+        team_elements = soup.find_all('div', class_='equipo')
+    if len(team_elements) >= 2:
+        box_score['home_team'] = team_elements[0].get_text(strip=True)
+        box_score['away_team'] = team_elements[1].get_text(strip=True)
 
     # Find all player rows in stats tables
     tables = soup.find_all('table')
@@ -377,16 +409,29 @@ def fetch_box_score(match_id):
                         col_map['minutes'] = idx
                     elif text in ['PTS', 'PT', 'P']:
                         col_map['points'] = idx
-                    elif text in ['REB', 'RT', 'R']:
+                    elif text in ['REB', 'RT', 'R', 'D+O', 'T']:
                         col_map['rebounds'] = idx
+                    elif text == 'RD' or text == 'D':
+                        col_map['def_rebounds'] = idx
+                    elif text == 'RO' or text == 'O':
+                        col_map['off_rebounds'] = idx
                     elif text in ['AST', 'AS', 'A']:
                         col_map['assists'] = idx
-                    elif text in ['ROB', 'ST']:
+                    elif text in ['ROB', 'ST', 'BR']:
                         col_map['steals'] = idx
-                    elif text in ['TAP', 'BL']:
+                    elif text in ['TAP', 'BL', 'MT', 'C']:
                         col_map['blocks'] = idx
-                    elif text in ['VAL', 'PIR']:
+                    elif text in ['VAL', 'PIR', 'V']:
                         col_map['rating'] = idx
+                    # 2-point field goals (T2 format: "made/attempted")
+                    elif text == 'T2':
+                        col_map['fg2'] = idx
+                    # 3-point field goals (T3 format: "made/attempted")
+                    elif text == 'T3':
+                        col_map['fg3'] = idx
+                    # Free throws (T1 format: "made/attempted")
+                    elif text == 'T1':
+                        col_map['ft'] = idx
                 continue
 
             # Skip if we haven't found header yet
@@ -420,6 +465,27 @@ def fetch_box_score(match_id):
                         # Handle time format MM:SS
                         if stat_name == 'minutes' and ':' in cell_text:
                             player_stats['minutes'] = cell_text
+                        # Handle made/attempted format (e.g., "3/5" for T2, T3, T1)
+                        elif stat_name in ['fg2', 'fg3', 'ft'] and '/' in cell_text:
+                            parts = cell_text.split('/')
+                            if len(parts) == 2:
+                                try:
+                                    player_stats[f'{stat_name}_made'] = int(parts[0])
+                                    player_stats[f'{stat_name}_attempted'] = int(parts[1])
+                                except:
+                                    pass
+                        # Handle rebounds format (could be "5+3" for D+O)
+                        elif stat_name == 'rebounds' and '+' in cell_text:
+                            parts = cell_text.split('+')
+                            if len(parts) == 2:
+                                try:
+                                    def_reb = int(parts[0])
+                                    off_reb = int(parts[1])
+                                    player_stats['rebounds'] = def_reb + off_reb
+                                    player_stats['def_rebounds'] = def_reb
+                                    player_stats['off_rebounds'] = off_reb
+                                except:
+                                    pass
                         else:
                             try:
                                 player_stats[stat_name] = int(cell_text)
