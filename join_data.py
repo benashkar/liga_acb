@@ -327,6 +327,31 @@ def main():
         logger.info(f"Built past games for {len(past_by_team)} teams")
         logger.info(f"Built upcoming games for {len(upcoming_by_team)} teams")
 
+    # Build game lookup for enriching game_log with opponent info
+    game_lookup = {}
+    if schedule_data:
+        is_acb_schedule = schedule_data.get('source') == 'acb.com'
+        for game in schedule_data.get('games', []):
+            game_id = game.get('game_id')
+            if game_id:
+                home_raw = game.get('home_team')
+                away_raw = game.get('away_team')
+                if is_acb_schedule:
+                    home_team = normalize_acb_team_name(home_raw)
+                    away_team = normalize_acb_team_name(away_raw)
+                else:
+                    home_team = home_raw
+                    away_team = away_raw
+                game_lookup[game_id] = {
+                    'home_team': home_team,
+                    'away_team': away_team,
+                    'home_score': game.get('home_score'),
+                    'away_score': game.get('away_score'),
+                    'date': game.get('date'),
+                    'round': game.get('round'),
+                }
+        logger.info(f"Built game lookup with {len(game_lookup)} games")
+
     # =========================================================================
     # Build Unified Player Records
     # =========================================================================
@@ -353,12 +378,39 @@ def main():
         apg = 0.0
 
         if acb_player:
-            game_log = acb_player.get('game_log', [])
+            raw_game_log = acb_player.get('game_log', [])
             games_played = acb_player.get('games_tracked', 0)
             ppg = acb_player.get('calculated_ppg', 0.0)
             rpg = acb_player.get('calculated_rpg', 0.0)
             apg = acb_player.get('calculated_apg', 0.0)
             logger.debug(f"  Matched ACB stats for {player_name}: {games_played} games, {ppg} PPG")
+
+            # Enrich game_log with opponent info from schedule
+            for entry in raw_game_log:
+                match_id = entry.get('match_id')
+                game_info = game_lookup.get(match_id, {})
+
+                # Determine opponent based on player's team
+                home = game_info.get('home_team')
+                away = game_info.get('away_team')
+                if team_name and home and away:
+                    if team_name == home:
+                        entry['opponent'] = away
+                        entry['home_away'] = 'Home'
+                        entry['team_score'] = game_info.get('home_score')
+                        entry['opponent_score'] = game_info.get('away_score')
+                    elif team_name == away:
+                        entry['opponent'] = home
+                        entry['home_away'] = 'Away'
+                        entry['team_score'] = game_info.get('away_score')
+                        entry['opponent_score'] = game_info.get('home_score')
+                    else:
+                        entry['opponent'] = f"{home} vs {away}"
+
+                entry['date'] = game_info.get('date')
+                entry['round'] = game_info.get('round') or entry.get('jornada')
+
+            game_log = raw_game_log
 
         # Build unified record
         unified = {
