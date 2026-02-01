@@ -1,5 +1,5 @@
 {
-  "export_date": "2026-01-31T21:07:12.774421",
+  "export_date": "2026-02-01T06:32:24.540344",
   "season": "2025-26",
   "league": "Liga ACB",
   "player_count": 28,
@@ -285,6 +285,21 @@
           "home_away": "Away",
           "team_score": 72,
           "opponent_score": 73,
+          "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Basquet Girona",
+          "away_team": "CB San Pablo Burgos",
+          "home_score": 77,
+          "away_score": 71,
+          "played": true,
+          "opponent": "Basquet Girona",
+          "home_away": "Away",
+          "team_score": 71,
+          "opponent_score": 77,
           "result": "L"
         }
       ],
@@ -4090,9 +4105,9 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/zunefo1700945948.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 9,
-      "ppg": 12.9,
-      "rpg": 6.0,
+      "games_played": 10,
+      "ppg": 12.2,
+      "rpg": 6.1,
       "apg": 1.8,
       "game_log": [
         {
@@ -4336,6 +4351,33 @@
           "team_score": 72,
           "opponent_score": 73,
           "date": "2026-01-24",
+          "round": "1"
+        },
+        {
+          "name": "E. Happ",
+          "acb_id": "30001954",
+          "minutes": "24:15",
+          "points": 6,
+          "fg2_made": 2,
+          "fg2_attempted": 10,
+          "fg3_made": 0,
+          "fg3_attempted": 0,
+          "ft_made": 2,
+          "ft_attempted": 2,
+          "rebounds": 7,
+          "def_rebounds": 3,
+          "off_rebounds": 4,
+          "assists": 2,
+          "steals": 3,
+          "blocks": 4,
+          "rating": 10,
+          "match_id": "104615",
+          "jornada": 1,
+          "opponent": "Basquet Girona",
+          "home_away": "Away",
+          "team_score": 71,
+          "opponent_score": 77,
+          "date": "2026-01-31",
           "round": "1"
         }
       ],
@@ -4593,6 +4635,21 @@
           "home_away": "Away",
           "team_score": 72,
           "opponent_score": 73,
+          "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Basquet Girona",
+          "away_team": "CB San Pablo Burgos",
+          "home_score": 77,
+          "away_score": 71,
+          "played": true,
+          "opponent": "Basquet Girona",
+          "home_away": "Away",
+          "team_score": 71,
+          "opponent_score": 77,
           "result": "L"
         }
       ],
@@ -10388,6 +10445,21 @@
           "home_away": "Away",
           "team_score": 72,
           "opponent_score": 73,
+          "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Basquet Girona",
+          "away_team": "CB San Pablo Burgos",
+          "home_score": 77,
+          "away_score": 71,
+          "played": true,
+          "opponent": "Basquet Girona",
+          "home_away": "Away",
+          "team_score": 71,
+          "opponent_score": 77,
           "result": "L"
         }
       ],

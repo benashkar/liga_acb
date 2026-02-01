@@ -1,5 +1,5 @@
 {
-  "export_date": "2026-01-31T21:07:12.605928",
+  "export_date": "2026-02-01T06:32:24.378443",
   "season": "2025-2026",
   "league": "Liga ACB",
   "player_count": 20,
@@ -5568,11 +5568,32 @@
           "rating": 23,
           "match_id": "104605",
           "jornada": 1
+        },
+        {
+          "name": "E. Happ",
+          "acb_id": "30001954",
+          "minutes": "24:15",
+          "points": 6,
+          "fg2_made": 2,
+          "fg2_attempted": 10,
+          "fg3_made": 0,
+          "fg3_attempted": 0,
+          "ft_made": 2,
+          "ft_attempted": 2,
+          "rebounds": 7,
+          "def_rebounds": 3,
+          "off_rebounds": 4,
+          "assists": 2,
+          "steals": 3,
+          "blocks": 4,
+          "rating": 10,
+          "match_id": "104615",
+          "jornada": 1
         }
       ],
-      "games_tracked": 9,
-      "calculated_ppg": 12.9,
-      "calculated_rpg": 6.0,
+      "games_tracked": 10,
+      "calculated_ppg": 12.2,
+      "calculated_rpg": 6.1,
       "calculated_apg": 1.8
     },
     {

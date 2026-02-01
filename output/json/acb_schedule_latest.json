@@ -1,9 +1,9 @@
 {
-  "export_date": "2026-01-31T21:07:12.681078",
+  "export_date": "2026-02-01T06:32:24.447796",
   "season": "2025-2026",
   "league": "Liga ACB",
   "source": "acb.com",
-  "game_count": 156,
+  "game_count": 157,
   "games": [
     {
       "game_id": "104459",
@@ -1717,6 +1717,17 @@
       "away_team": "JOVJoventut BadalonaJoventut",
       "home_score": 80,
       "away_score": 76,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104615",
+      "round": "1",
+      "home_team": "GIRBàsquet GironaBàsquet Girona",
+      "away_team": "BURRecoletas Salud San Pablo BurgosRecoletas Salud",
+      "home_score": 77,
+      "away_score": 71,
       "date": null,
       "played": true,
       "has_boxscore": true
