@@ -1,9 +1,9 @@
 {
-  "export_date": "2026-02-01T06:32:24.447796",
+  "export_date": "2026-02-02T06:38:41.973771",
   "season": "2025-2026",
   "league": "Liga ACB",
   "source": "acb.com",
-  "game_count": 157,
+  "game_count": 162,
   "games": [
     {
       "game_id": "104459",
@@ -1728,6 +1728,61 @@
       "away_team": "BURRecoletas Salud San Pablo BurgosRecoletas Salud",
       "home_score": 77,
       "away_score": 71,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104616",
+      "round": "1",
+      "home_team": "BAXBAXI ManresaBAXI Manresa",
+      "away_team": "UNIUnicajaUnicaja",
+      "home_score": 92,
+      "away_score": 98,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104617",
+      "round": "1",
+      "home_team": "RMBReal MadridReal Madrid",
+      "away_team": "CAZCasademont ZaragozaCasademont Zgz",
+      "home_score": 99,
+      "away_score": 78,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104618",
+      "round": "1",
+      "home_team": "VBCValencia BasketValencia Basket",
+      "away_team": "HIOHiopos LleidaHiopos Lleida",
+      "home_score": 101,
+      "away_score": 65,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104619",
+      "round": "1",
+      "home_team": "LLTLa Laguna TenerifeLa Laguna TFE",
+      "away_team": "BKNKosner BaskoniaKosner Baskonia",
+      "home_score": 89,
+      "away_score": 85,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104620",
+      "round": "1",
+      "home_team": "UCMUCAM MurciaUCAM Murcia",
+      "away_team": "BARBarçaBarça",
+      "home_score": 84,
+      "away_score": 83,
       "date": null,
       "played": true,
       "has_boxscore": true

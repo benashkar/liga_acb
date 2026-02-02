@@ -1,8 +1,8 @@
 {
-  "export_date": "2026-02-01T06:32:24.572199",
+  "export_date": "2026-02-02T06:38:42.104980",
   "season": "2025-26",
   "league": "Liga ACB",
-  "player_count": 28,
+  "player_count": 29,
   "players": [
     {
       "code": "34176343",
@@ -99,8 +99,8 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/eqzfj51709465852.jpg",
-      "games_played": 10,
-      "ppg": 6.0,
+      "games_played": 11,
+      "ppg": 6.4,
       "rpg": 3.7,
       "apg": 0.8
     },
@@ -139,9 +139,9 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/knp6lf1759319345.jpg",
-      "games_played": 13,
+      "games_played": 14,
       "ppg": 5.2,
-      "rpg": 2.5,
+      "rpg": 2.4,
       "apg": 0.2
     },
     {
@@ -279,10 +279,10 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/ok73fv1700948962.jpg",
-      "games_played": 15,
-      "ppg": 9.1,
+      "games_played": 16,
+      "ppg": 9.2,
       "rpg": 3.7,
-      "apg": 0.5
+      "apg": 0.6
     },
     {
       "code": "34173126",
@@ -299,9 +299,9 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/9xy2q21606039685.jpg",
-      "games_played": 16,
-      "ppg": 6.1,
-      "rpg": 3.4,
+      "games_played": 17,
+      "ppg": 5.9,
+      "rpg": 3.5,
       "apg": 0.6
     },
     {
@@ -339,9 +339,9 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/qc411f1683398824.jpg",
-      "games_played": 17,
-      "ppg": 12.5,
-      "rpg": 1.6,
+      "games_played": 18,
+      "ppg": 12.3,
+      "rpg": 1.7,
       "apg": 2.0
     },
     {
@@ -379,9 +379,9 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/dvkevt1688808757.jpg",
-      "games_played": 8,
-      "ppg": 9.6,
-      "rpg": 3.8,
+      "games_played": 9,
+      "ppg": 9.3,
+      "rpg": 3.7,
       "apg": 0.2
     },
     {
@@ -419,8 +419,8 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/wqyb5t1767616737.jpg",
-      "games_played": 17,
-      "ppg": 9.8,
+      "games_played": 18,
+      "ppg": 9.4,
       "rpg": 3.1,
       "apg": 0.7
     },
@@ -459,10 +459,30 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/so6kai1767617005.jpg",
-      "games_played": 15,
-      "ppg": 8.9,
-      "rpg": 2.9,
+      "games_played": 16,
+      "ppg": 8.8,
+      "rpg": 2.7,
       "apg": 2.5
+    },
+    {
+      "code": "34225305",
+      "name": "Shannon Evans",
+      "team": "BC Andorra",
+      "team_code": "135090",
+      "position": "Point Guard",
+      "jersey": "",
+      "height_feet": null,
+      "height_inches": null,
+      "birth_date": "1994-07-19",
+      "hometown": null,
+      "hometown_state": null,
+      "college": null,
+      "high_school": null,
+      "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/gsx2xl1700949404.jpg",
+      "games_played": 0,
+      "ppg": 0.0,
+      "rpg": 0.0,
+      "apg": 0.0
     },
     {
       "code": "34176308",
@@ -519,9 +539,9 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/3skg181688751195.jpg",
-      "games_played": 17,
-      "ppg": 12.5,
-      "rpg": 1.8,
+      "games_played": 18,
+      "ppg": 12.0,
+      "rpg": 1.7,
       "apg": 1.9
     },
     {
@@ -559,8 +579,8 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/95db4y1619819099.jpg",
-      "games_played": 16,
-      "ppg": 5.8,
+      "games_played": 17,
+      "ppg": 6.1,
       "rpg": 2.2,
       "apg": 2.4
     }
