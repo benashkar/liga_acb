@@ -1,5 +1,5 @@
 {
-  "export_date": "2026-02-07T06:27:55.983393",
+  "export_date": "2026-02-08T06:32:19.788235",
   "season": "2025-26",
   "league": "Liga ACB",
   "player_count": 29,
@@ -139,10 +139,10 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/knp6lf1759319345.jpg",
-      "games_played": 14,
-      "ppg": 5.2,
-      "rpg": 2.4,
-      "apg": 0.2
+      "games_played": 15,
+      "ppg": 4.9,
+      "rpg": 2.3,
+      "apg": 0.3
     },
     {
       "code": "34193811",
@@ -219,10 +219,10 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/zunefo1700945948.jpg",
-      "games_played": 10,
-      "ppg": 12.2,
-      "rpg": 6.1,
-      "apg": 1.8
+      "games_played": 11,
+      "ppg": 12.4,
+      "rpg": 6.0,
+      "apg": 2.1
     },
     {
       "code": "34348471",
@@ -279,9 +279,9 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/ok73fv1700948962.jpg",
-      "games_played": 16,
-      "ppg": 9.2,
-      "rpg": 3.7,
+      "games_played": 17,
+      "ppg": 8.7,
+      "rpg": 3.6,
       "apg": 0.6
     },
     {
@@ -539,8 +539,8 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/3skg181688751195.jpg",
-      "games_played": 18,
-      "ppg": 12.0,
+      "games_played": 19,
+      "ppg": 12.1,
       "rpg": 1.7,
       "apg": 1.9
     },
@@ -579,10 +579,10 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/95db4y1619819099.jpg",
-      "games_played": 17,
-      "ppg": 6.1,
-      "rpg": 2.2,
-      "apg": 2.4
+      "games_played": 18,
+      "ppg": 6.2,
+      "rpg": 2.1,
+      "apg": 2.3
     }
   ]
 }

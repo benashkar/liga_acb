@@ -1,5 +1,5 @@
 {
-  "export_date": "2026-02-07T06:27:55.754327",
+  "export_date": "2026-02-08T06:32:19.593758",
   "season": "2025-2026",
   "league": "Liga ACB",
   "player_count": 20,
@@ -365,12 +365,33 @@
           "rating": 10,
           "match_id": "104616",
           "jornada": 1
+        },
+        {
+          "name": "T. Kalinoski",
+          "acb_id": "30001169",
+          "minutes": "17:22",
+          "points": 9,
+          "fg2_made": 2,
+          "fg2_attempted": 2,
+          "fg3_made": 1,
+          "fg3_attempted": 4,
+          "ft_made": 2,
+          "ft_attempted": 2,
+          "rebounds": 1,
+          "def_rebounds": 0,
+          "off_rebounds": 1,
+          "assists": 0,
+          "steals": 1,
+          "blocks": 2,
+          "rating": 9,
+          "match_id": "104622",
+          "jornada": 1
         }
       ],
-      "games_tracked": 17,
-      "calculated_ppg": 6.1,
-      "calculated_rpg": 2.2,
-      "calculated_apg": 2.4
+      "games_tracked": 18,
+      "calculated_ppg": 6.2,
+      "calculated_rpg": 2.1,
+      "calculated_apg": 2.3
     },
     {
       "acb_id": "30000023",
@@ -2027,12 +2048,33 @@
           "rating": 7,
           "match_id": "104617",
           "jornada": 1
+        },
+        {
+          "name": "D.J. Stephens",
+          "acb_id": "30003817",
+          "minutes": "14:04",
+          "points": 0,
+          "fg2_made": 0,
+          "fg2_attempted": 0,
+          "fg3_made": 0,
+          "fg3_attempted": 1,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 1,
+          "def_rebounds": 1,
+          "off_rebounds": 0,
+          "assists": 1,
+          "steals": 1,
+          "blocks": 0,
+          "rating": 3,
+          "match_id": "104708",
+          "jornada": 1
         }
       ],
-      "games_tracked": 14,
-      "calculated_ppg": 5.2,
-      "calculated_rpg": 2.4,
-      "calculated_apg": 0.2
+      "games_tracked": 15,
+      "calculated_ppg": 4.9,
+      "calculated_rpg": 2.3,
+      "calculated_apg": 0.3
     },
     {
       "acb_id": "30003408",
@@ -2574,10 +2616,31 @@
           "rating": 1,
           "match_id": "104620",
           "jornada": 1
+        },
+        {
+          "name": "M. Forrest",
+          "acb_id": "30003919",
+          "def_rebounds": 0,
+          "minutes": "16:43",
+          "points": 14,
+          "fg2_made": 3,
+          "fg2_attempted": 4,
+          "fg3_made": 2,
+          "fg3_attempted": 6,
+          "ft_made": 2,
+          "ft_attempted": 4,
+          "rebounds": 1,
+          "off_rebounds": 1,
+          "assists": 3,
+          "steals": 0,
+          "blocks": 2,
+          "rating": 10,
+          "match_id": "104624",
+          "jornada": 1
         }
       ],
-      "games_tracked": 18,
-      "calculated_ppg": 12.0,
+      "games_tracked": 19,
+      "calculated_ppg": 12.1,
       "calculated_rpg": 1.7,
       "calculated_apg": 1.9
     },
@@ -5245,11 +5308,32 @@
           "rating": 15,
           "match_id": "104616",
           "jornada": 1
+        },
+        {
+          "name": "J. Webb",
+          "acb_id": "30000954",
+          "def_rebounds": 2,
+          "minutes": "11:01",
+          "points": 1,
+          "fg2_made": 0,
+          "fg2_attempted": 0,
+          "fg3_made": 0,
+          "fg3_attempted": 1,
+          "ft_made": 1,
+          "ft_attempted": 2,
+          "rebounds": 3,
+          "off_rebounds": 1,
+          "assists": 1,
+          "steals": 0,
+          "blocks": 4,
+          "rating": 5,
+          "match_id": "104622",
+          "jornada": 1
         }
       ],
-      "games_tracked": 16,
-      "calculated_ppg": 9.2,
-      "calculated_rpg": 3.7,
+      "games_tracked": 17,
+      "calculated_ppg": 8.7,
+      "calculated_rpg": 3.6,
       "calculated_apg": 0.6
     },
     {
@@ -5820,12 +5904,33 @@
           "rating": 10,
           "match_id": "104615",
           "jornada": 1
+        },
+        {
+          "name": "E. Happ",
+          "acb_id": "30001954",
+          "minutes": "24:51",
+          "points": 14,
+          "fg2_made": 5,
+          "fg2_attempted": 7,
+          "fg3_made": 0,
+          "fg3_attempted": 0,
+          "ft_made": 4,
+          "ft_attempted": 6,
+          "rebounds": 5,
+          "def_rebounds": 3,
+          "off_rebounds": 2,
+          "assists": 5,
+          "steals": 1,
+          "blocks": 4,
+          "rating": 21,
+          "match_id": "104621",
+          "jornada": 1
         }
       ],
-      "games_tracked": 10,
-      "calculated_ppg": 12.2,
-      "calculated_rpg": 6.1,
-      "calculated_apg": 1.8
+      "games_tracked": 11,
+      "calculated_ppg": 12.4,
+      "calculated_rpg": 6.0,
+      "calculated_apg": 2.1
     },
     {
       "acb_id": "30004050",
