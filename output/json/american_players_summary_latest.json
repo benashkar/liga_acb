@@ -1,5 +1,5 @@
 {
-  "export_date": "2026-02-08T06:32:19.788235",
+  "export_date": "2026-02-09T06:40:27.160556",
   "season": "2025-26",
   "league": "Liga ACB",
   "player_count": 29,
@@ -99,9 +99,9 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/eqzfj51709465852.jpg",
-      "games_played": 11,
-      "ppg": 6.4,
-      "rpg": 3.7,
+      "games_played": 12,
+      "ppg": 6.2,
+      "rpg": 3.5,
       "apg": 0.8
     },
     {
@@ -159,10 +159,10 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/3pi26u1633288654.jpg",
-      "games_played": 15,
-      "ppg": 9.4,
-      "rpg": 2.0,
-      "apg": 3.7
+      "games_played": 16,
+      "ppg": 9.0,
+      "rpg": 1.9,
+      "apg": 3.5
     },
     {
       "code": "34233101",
@@ -299,10 +299,10 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/9xy2q21606039685.jpg",
-      "games_played": 17,
-      "ppg": 5.9,
-      "rpg": 3.5,
-      "apg": 0.6
+      "games_played": 18,
+      "ppg": 5.7,
+      "rpg": 3.4,
+      "apg": 0.7
     },
     {
       "code": "34233100",
@@ -319,10 +319,10 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/70zb7d1714388814.jpg",
-      "games_played": 13,
-      "ppg": 10.0,
-      "rpg": 3.8,
-      "apg": 2.2
+      "games_played": 14,
+      "ppg": 10.1,
+      "rpg": 3.9,
+      "apg": 2.5
     },
     {
       "code": "34217968",
@@ -399,8 +399,8 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/usc23m1765618541.jpg",
-      "games_played": 16,
-      "ppg": 6.0,
+      "games_played": 17,
+      "ppg": 6.6,
       "rpg": 2.2,
       "apg": 0.8
     },
@@ -419,9 +419,9 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/wqyb5t1767616737.jpg",
-      "games_played": 18,
-      "ppg": 9.4,
-      "rpg": 3.1,
+      "games_played": 19,
+      "ppg": 9.6,
+      "rpg": 2.9,
       "apg": 0.7
     },
     {
@@ -459,10 +459,10 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/so6kai1767617005.jpg",
-      "games_played": 16,
+      "games_played": 17,
       "ppg": 8.8,
-      "rpg": 2.7,
-      "apg": 2.5
+      "rpg": 2.5,
+      "apg": 2.6
     },
     {
       "code": "34225305",

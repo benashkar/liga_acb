@@ -1,9 +1,9 @@
 {
-  "export_date": "2026-02-08T06:32:19.671949",
+  "export_date": "2026-02-09T06:40:27.036990",
   "season": "2025-2026",
   "league": "Liga ACB",
   "source": "acb.com",
-  "game_count": 166,
+  "game_count": 171,
   "games": [
     {
       "game_id": "104459",
@@ -985,15 +985,15 @@
       "has_boxscore": true
     },
     {
-      "game_id": null,
+      "game_id": "104542",
       "round": "1",
       "home_team": "DGCDreamland Gran CanariaDreamland GC",
       "away_team": "BKNKosner BaskoniaKosner Baskonia",
-      "home_score": null,
-      "away_score": null,
-      "date": "Dom 8-",
-      "played": false,
-      "has_boxscore": false
+      "home_score": 75,
+      "away_score": 97,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
     },
     {
       "game_id": "104549",
@@ -1819,6 +1819,61 @@
       "date": null,
       "played": true,
       "has_boxscore": true
+    },
+    {
+      "game_id": "104625",
+      "round": "1",
+      "home_team": "HIOHiopos LleidaHiopos Lleida",
+      "away_team": "BAXBAXI ManresaBAXI Manresa",
+      "home_score": 90,
+      "away_score": 99,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104626",
+      "round": "1",
+      "home_team": "JOVAsisa JoventutAsisa Joventut",
+      "away_team": "VBCValencia BasketValencia Basket",
+      "home_score": 90,
+      "away_score": 87,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104627",
+      "round": "1",
+      "home_team": "RMBReal MadridReal Madrid",
+      "away_team": "COVCoviran GranadaCoviran Granada",
+      "home_score": 94,
+      "away_score": 79,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104629",
+      "round": "1",
+      "home_team": "BARBarçaBarça",
+      "away_team": "GIRBàsquet GironaBàsquet Girona",
+      "home_score": 97,
+      "away_score": 92,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": null,
+      "round": "1",
+      "home_team": "DGCDreamland Gran CanariaDreamland GC",
+      "away_team": "SBBSurne BilbaoSurne Bilbao",
+      "home_score": null,
+      "away_score": null,
+      "date": "Mié 18-",
+      "played": false,
+      "has_boxscore": false
     },
     {
       "game_id": "104708",
