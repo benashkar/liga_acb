@@ -1,5 +1,5 @@
 {
-  "export_date": "2026-02-14T06:28:19.960291",
+  "export_date": "2026-02-15T06:32:52.424528",
   "season": "2025-2026",
   "league": "Liga ACB",
   "player_count": 20,
@@ -2094,6 +2094,27 @@
         {
           "name": "D.J. Stephens",
           "acb_id": "30003817",
+          "def_rebounds": 1,
+          "minutes": "07:18",
+          "points": 0,
+          "fg2_made": 0,
+          "fg2_attempted": 0,
+          "fg3_made": 0,
+          "fg3_attempted": 1,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 1,
+          "off_rebounds": 0,
+          "assists": 0,
+          "steals": 0,
+          "blocks": 0,
+          "rating": -1,
+          "match_id": "104630",
+          "jornada": 1
+        },
+        {
+          "name": "D.J. Stephens",
+          "acb_id": "30003817",
           "minutes": "14:04",
           "points": 0,
           "fg2_made": 0,
@@ -2113,10 +2134,10 @@
           "jornada": 1
         }
       ],
-      "games_tracked": 15,
-      "calculated_ppg": 4.9,
-      "calculated_rpg": 2.3,
-      "calculated_apg": 0.3
+      "games_tracked": 16,
+      "calculated_ppg": 4.6,
+      "calculated_rpg": 2.2,
+      "calculated_apg": 0.2
     },
     {
       "acb_id": "30003408",
@@ -2700,12 +2721,33 @@
           "rating": 10,
           "match_id": "104624",
           "jornada": 1
+        },
+        {
+          "name": "M. Forrest",
+          "acb_id": "30003919",
+          "def_rebounds": 0,
+          "minutes": "22:28",
+          "points": 14,
+          "fg2_made": 1,
+          "fg2_attempted": 4,
+          "fg3_made": 4,
+          "fg3_attempted": 8,
+          "ft_made": 0,
+          "ft_attempted": 2,
+          "rebounds": 0,
+          "off_rebounds": 0,
+          "assists": 4,
+          "steals": 1,
+          "blocks": 3,
+          "rating": 8,
+          "match_id": "104633",
+          "jornada": 1
         }
       ],
-      "games_tracked": 19,
-      "calculated_ppg": 12.1,
-      "calculated_rpg": 1.7,
-      "calculated_apg": 1.9
+      "games_tracked": 20,
+      "calculated_ppg": 12.2,
+      "calculated_rpg": 1.6,
+      "calculated_apg": 2.0
     },
     {
       "acb_id": "30001981",
@@ -6135,12 +6177,33 @@
           "rating": 21,
           "match_id": "104621",
           "jornada": 1
+        },
+        {
+          "name": "E. Happ",
+          "acb_id": "30001954",
+          "minutes": "24:52",
+          "points": 10,
+          "fg2_made": 4,
+          "fg2_attempted": 14,
+          "fg3_made": 0,
+          "fg3_attempted": 1,
+          "ft_made": 2,
+          "ft_attempted": 4,
+          "rebounds": 11,
+          "def_rebounds": 7,
+          "off_rebounds": 4,
+          "assists": 1,
+          "steals": 3,
+          "blocks": 4,
+          "rating": 7,
+          "match_id": "104633",
+          "jornada": 1
         }
       ],
-      "games_tracked": 11,
-      "calculated_ppg": 12.4,
-      "calculated_rpg": 6.0,
-      "calculated_apg": 2.1
+      "games_tracked": 12,
+      "calculated_ppg": 12.2,
+      "calculated_rpg": 6.4,
+      "calculated_apg": 2.0
     },
     {
       "acb_id": "30004050",
