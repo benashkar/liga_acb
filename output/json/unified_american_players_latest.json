@@ -1,5 +1,5 @@
 {
-  "export_date": "2026-02-15T06:32:52.602785",
+  "export_date": "2026-02-16T06:40:08.754528",
   "season": "2025-26",
   "league": "Liga ACB",
   "player_count": 29,
@@ -649,6 +649,21 @@
           "team_score": 79,
           "opponent_score": 91,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "BC Andorra",
+          "away_team": "Valencia Basket",
+          "home_score": 75,
+          "away_score": 107,
+          "played": true,
+          "opponent": "Valencia Basket",
+          "home_away": "Home",
+          "team_score": 75,
+          "opponent_score": 107,
+          "result": "L"
         }
       ],
       "upcoming_games": [],
@@ -967,6 +982,21 @@
           "team_score": 87,
           "opponent_score": 90,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "BC Andorra",
+          "away_team": "Valencia Basket",
+          "home_score": 75,
+          "away_score": 107,
+          "played": true,
+          "opponent": "BC Andorra",
+          "home_away": "Away",
+          "team_score": 107,
+          "opponent_score": 75,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -1270,6 +1300,21 @@
           "team_score": 85,
           "opponent_score": 89,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Bilbao Basket",
+          "away_team": "Baskonia",
+          "home_score": 69,
+          "away_score": 76,
+          "played": true,
+          "opponent": "Bilbao Basket",
+          "home_away": "Away",
+          "team_score": 76,
+          "opponent_score": 69,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -1298,8 +1343,8 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/eqzfj51709465852.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 12,
-      "ppg": 6.2,
+      "games_played": 13,
+      "ppg": 6.4,
       "rpg": 3.5,
       "apg": 0.8,
       "game_log": [
@@ -1626,6 +1671,33 @@
           "opponent_score": 79,
           "date": "2026-02-08",
           "round": "1"
+        },
+        {
+          "name": "C. Okeke",
+          "acb_id": "30003981",
+          "minutes": "18:47",
+          "points": 9,
+          "fg2_made": 2,
+          "fg2_attempted": 2,
+          "fg3_made": 1,
+          "fg3_attempted": 2,
+          "ft_made": 2,
+          "ft_attempted": 2,
+          "rebounds": 3,
+          "def_rebounds": 3,
+          "off_rebounds": 0,
+          "assists": 1,
+          "steals": 1,
+          "blocks": 2,
+          "rating": 14,
+          "match_id": "104638",
+          "jornada": 1,
+          "opponent": "Baloncesto Málaga",
+          "home_away": "Away",
+          "team_score": 96,
+          "opponent_score": 92,
+          "date": "2026-02-15",
+          "round": "1"
         }
       ],
       "past_games": [
@@ -1912,6 +1984,21 @@
           "home_away": "Home",
           "team_score": 94,
           "opponent_score": 79,
+          "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Baloncesto Málaga",
+          "away_team": "Real Madrid Baloncesto",
+          "home_score": 92,
+          "away_score": 96,
+          "played": true,
+          "opponent": "Baloncesto Málaga",
+          "home_away": "Away",
+          "team_score": 96,
+          "opponent_score": 92,
           "result": "W"
         }
       ],
@@ -2230,6 +2317,21 @@
           "home_away": "Away",
           "team_score": 79,
           "opponent_score": 91,
+          "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "BC Andorra",
+          "away_team": "Valencia Basket",
+          "home_score": 75,
+          "away_score": 107,
+          "played": true,
+          "opponent": "Valencia Basket",
+          "home_away": "Home",
+          "team_score": 75,
+          "opponent_score": 107,
           "result": "L"
         }
       ],
@@ -3025,8 +3127,8 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/3pi26u1633288654.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 16,
-      "ppg": 9.0,
+      "games_played": 17,
+      "ppg": 8.8,
       "rpg": 1.9,
       "apg": 3.5,
       "game_log": [
@@ -3461,6 +3563,33 @@
           "opponent_score": 90,
           "date": "2026-02-08",
           "round": "1"
+        },
+        {
+          "name": "D. Thompson",
+          "acb_id": "30001900",
+          "def_rebounds": 2,
+          "minutes": "14:58",
+          "points": 5,
+          "fg2_made": 0,
+          "fg2_attempted": 0,
+          "fg3_made": 0,
+          "fg3_attempted": 4,
+          "ft_made": 5,
+          "ft_attempted": 6,
+          "rebounds": 2,
+          "off_rebounds": 0,
+          "assists": 3,
+          "steals": 0,
+          "blocks": 3,
+          "rating": 5,
+          "match_id": "104635",
+          "jornada": 1,
+          "opponent": "BC Andorra",
+          "home_away": "Away",
+          "team_score": 107,
+          "opponent_score": 75,
+          "date": "2026-02-15",
+          "round": "1"
         }
       ],
       "past_games": [
@@ -3748,6 +3877,21 @@
           "team_score": 87,
           "opponent_score": 90,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "BC Andorra",
+          "away_team": "Valencia Basket",
+          "home_score": 75,
+          "away_score": 107,
+          "played": true,
+          "opponent": "BC Andorra",
+          "home_away": "Away",
+          "team_score": 107,
+          "opponent_score": 75,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -4175,6 +4319,21 @@
           "team_score": 91,
           "opponent_score": 79,
           "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Baloncesto Málaga",
+          "away_team": "Real Madrid Baloncesto",
+          "home_score": 92,
+          "away_score": 96,
+          "played": true,
+          "opponent": "Real Madrid Baloncesto",
+          "home_away": "Home",
+          "team_score": 92,
+          "opponent_score": 96,
+          "result": "L"
         }
       ],
       "upcoming_games": [],
@@ -5890,6 +6049,21 @@
           "team_score": 99,
           "opponent_score": 90,
           "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Barça",
+          "away_team": "Basquet Manresa",
+          "home_score": 97,
+          "away_score": 60,
+          "played": true,
+          "opponent": "Barça",
+          "home_away": "Away",
+          "team_score": 60,
+          "opponent_score": 97,
+          "result": "L"
         }
       ],
       "upcoming_games": [],
@@ -6251,8 +6425,8 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/ok73fv1700948962.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 17,
-      "ppg": 8.7,
+      "games_played": 18,
+      "ppg": 8.8,
       "rpg": 3.6,
       "apg": 0.6,
       "game_log": [
@@ -6714,6 +6888,33 @@
           "opponent_score": 79,
           "date": "2026-02-07",
           "round": "1"
+        },
+        {
+          "name": "J. Webb",
+          "acb_id": "30000954",
+          "minutes": "20:48",
+          "points": 10,
+          "fg2_made": 2,
+          "fg2_attempted": 6,
+          "fg3_made": 2,
+          "fg3_attempted": 4,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 2,
+          "def_rebounds": 1,
+          "off_rebounds": 1,
+          "assists": 1,
+          "steals": 2,
+          "blocks": 1,
+          "rating": 4,
+          "match_id": "104638",
+          "jornada": 1,
+          "opponent": "Real Madrid Baloncesto",
+          "home_away": "Home",
+          "team_score": 92,
+          "opponent_score": 96,
+          "date": "2026-02-15",
+          "round": "1"
         }
       ],
       "past_games": [
@@ -7001,6 +7202,21 @@
           "team_score": 91,
           "opponent_score": 79,
           "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Baloncesto Málaga",
+          "away_team": "Real Madrid Baloncesto",
+          "home_score": 92,
+          "away_score": 96,
+          "played": true,
+          "opponent": "Real Madrid Baloncesto",
+          "home_away": "Home",
+          "team_score": 92,
+          "opponent_score": 96,
+          "result": "L"
         }
       ],
       "upcoming_games": [],
@@ -7029,10 +7245,10 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/9xy2q21606039685.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 18,
+      "games_played": 19,
       "ppg": 5.7,
       "rpg": 3.4,
-      "apg": 0.7,
+      "apg": 0.6,
       "game_log": [
         {
           "name": "J. Shurna",
@@ -7454,6 +7670,30 @@
           "opponent": "Hiopos Lleida vs Basquet Manresa",
           "date": "2026-02-08",
           "round": "1"
+        },
+        {
+          "name": "J. Shurna",
+          "acb_id": "20210670",
+          "def_rebounds": 2,
+          "minutes": "12:05",
+          "points": 6,
+          "fg2_made": 1,
+          "fg2_attempted": 2,
+          "fg3_made": 1,
+          "fg3_attempted": 1,
+          "ft_made": 1,
+          "ft_attempted": 2,
+          "rebounds": 4,
+          "off_rebounds": 2,
+          "assists": 0,
+          "steals": 1,
+          "blocks": 1,
+          "rating": 10,
+          "match_id": "104634",
+          "jornada": 1,
+          "opponent": "Hiopos Lleida vs Basquet Girona",
+          "date": "2026-02-15",
+          "round": "1"
         }
       ],
       "past_games": [
@@ -7785,10 +8025,10 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/70zb7d1714388814.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 14,
-      "ppg": 10.1,
-      "rpg": 3.9,
-      "apg": 2.5,
+      "games_played": 15,
+      "ppg": 10.9,
+      "rpg": 3.7,
+      "apg": 2.4,
       "game_log": [
         {
           "name": "K. Taylor",
@@ -8167,6 +8407,33 @@
           "opponent_score": 90,
           "date": "2026-02-08",
           "round": "1"
+        },
+        {
+          "name": "K. Taylor",
+          "acb_id": "30001981",
+          "minutes": "15:12",
+          "points": 22,
+          "fg2_made": 2,
+          "fg2_attempted": 3,
+          "fg3_made": 6,
+          "fg3_attempted": 8,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 1,
+          "def_rebounds": 0,
+          "off_rebounds": 1,
+          "assists": 1,
+          "steals": 1,
+          "blocks": 0,
+          "rating": 21,
+          "match_id": "104635",
+          "jornada": 1,
+          "opponent": "BC Andorra",
+          "home_away": "Away",
+          "team_score": 107,
+          "opponent_score": 75,
+          "date": "2026-02-15",
+          "round": "1"
         }
       ],
       "past_games": [
@@ -8454,6 +8721,21 @@
           "team_score": 87,
           "opponent_score": 90,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "BC Andorra",
+          "away_team": "Valencia Basket",
+          "home_score": 75,
+          "away_score": 107,
+          "played": true,
+          "opponent": "BC Andorra",
+          "home_away": "Away",
+          "team_score": 107,
+          "opponent_score": 75,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -9908,9 +10190,9 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/usc23m1765618541.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 17,
-      "ppg": 6.6,
-      "rpg": 2.2,
+      "games_played": 18,
+      "ppg": 7.0,
+      "rpg": 2.1,
       "apg": 0.8,
       "game_log": [
         {
@@ -10320,6 +10602,30 @@
           "opponent": "Barça vs Basquet Girona",
           "date": "2026-02-08",
           "round": "1"
+        },
+        {
+          "name": "M. Cale",
+          "acb_id": "30003948",
+          "def_rebounds": 0,
+          "minutes": "17:45",
+          "points": 13,
+          "fg2_made": 3,
+          "fg2_attempted": 4,
+          "fg3_made": 1,
+          "fg3_attempted": 3,
+          "ft_made": 4,
+          "ft_attempted": 4,
+          "rebounds": 0,
+          "off_rebounds": 0,
+          "assists": 0,
+          "steals": 0,
+          "blocks": 3,
+          "rating": 10,
+          "match_id": "104636",
+          "jornada": 1,
+          "opponent": "Barça vs Basquet Manresa",
+          "date": "2026-02-15",
+          "round": "1"
         }
       ],
       "past_games": [],
@@ -10349,8 +10655,8 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/wqyb5t1767616737.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 19,
-      "ppg": 9.6,
+      "games_played": 20,
+      "ppg": 9.4,
       "rpg": 2.9,
       "apg": 0.7,
       "game_log": [
@@ -10866,6 +11172,33 @@
           "opponent_score": 90,
           "date": "2026-02-08",
           "round": "1"
+        },
+        {
+          "name": "N. Reuvers",
+          "acb_id": "30002724",
+          "def_rebounds": 1,
+          "minutes": "11:54",
+          "points": 6,
+          "fg2_made": 1,
+          "fg2_attempted": 1,
+          "fg3_made": 1,
+          "fg3_attempted": 4,
+          "ft_made": 1,
+          "ft_attempted": 2,
+          "rebounds": 3,
+          "off_rebounds": 2,
+          "assists": 0,
+          "steals": 0,
+          "blocks": 4,
+          "rating": 7,
+          "match_id": "104635",
+          "jornada": 1,
+          "opponent": "BC Andorra",
+          "home_away": "Away",
+          "team_score": 107,
+          "opponent_score": 75,
+          "date": "2026-02-15",
+          "round": "1"
         }
       ],
       "past_games": [
@@ -11153,6 +11486,21 @@
           "team_score": 87,
           "opponent_score": 90,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "BC Andorra",
+          "away_team": "Valencia Basket",
+          "home_score": 75,
+          "away_score": 107,
+          "played": true,
+          "opponent": "BC Andorra",
+          "home_away": "Away",
+          "team_score": 107,
+          "opponent_score": 75,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -11514,10 +11862,10 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/so6kai1767617005.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 17,
-      "ppg": 8.8,
-      "rpg": 2.5,
-      "apg": 2.6,
+      "games_played": 18,
+      "ppg": 9.1,
+      "rpg": 2.6,
+      "apg": 2.8,
       "game_log": [
         {
           "name": "O. Moore",
@@ -11977,6 +12325,33 @@
           "opponent_score": 90,
           "date": "2026-02-08",
           "round": "1"
+        },
+        {
+          "name": "O. Moore",
+          "acb_id": "30003991",
+          "def_rebounds": 3,
+          "minutes": "20:22",
+          "points": 13,
+          "fg2_made": 5,
+          "fg2_attempted": 7,
+          "fg3_made": 1,
+          "fg3_attempted": 3,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 4,
+          "off_rebounds": 1,
+          "assists": 6,
+          "steals": 1,
+          "blocks": 0,
+          "rating": 16,
+          "match_id": "104635",
+          "jornada": 1,
+          "opponent": "BC Andorra",
+          "home_away": "Away",
+          "team_score": 107,
+          "opponent_score": 75,
+          "date": "2026-02-15",
+          "round": "1"
         }
       ],
       "past_games": [
@@ -12264,6 +12639,21 @@
           "team_score": 87,
           "opponent_score": 90,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "BC Andorra",
+          "away_team": "Valencia Basket",
+          "home_score": 75,
+          "away_score": 107,
+          "played": true,
+          "opponent": "BC Andorra",
+          "home_away": "Away",
+          "team_score": 107,
+          "opponent_score": 75,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -12581,6 +12971,21 @@
           "home_away": "Away",
           "team_score": 79,
           "opponent_score": 91,
+          "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "BC Andorra",
+          "away_team": "Valencia Basket",
+          "home_score": 75,
+          "away_score": 107,
+          "played": true,
+          "opponent": "Valencia Basket",
+          "home_away": "Home",
+          "team_score": 75,
+          "opponent_score": 107,
           "result": "L"
         }
       ],
@@ -14035,6 +14440,21 @@
           "team_score": 85,
           "opponent_score": 89,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Bilbao Basket",
+          "away_team": "Baskonia",
+          "home_score": 69,
+          "away_score": 76,
+          "played": true,
+          "opponent": "Bilbao Basket",
+          "home_away": "Away",
+          "team_score": 76,
+          "opponent_score": 69,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -14396,8 +14816,8 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/95db4y1619819099.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 18,
-      "ppg": 6.2,
+      "games_played": 19,
+      "ppg": 6.3,
       "rpg": 2.1,
       "apg": 2.3,
       "game_log": [
@@ -14886,6 +15306,33 @@
           "opponent_score": 79,
           "date": "2026-02-07",
           "round": "1"
+        },
+        {
+          "name": "T. Kalinoski",
+          "acb_id": "30001169",
+          "def_rebounds": 1,
+          "minutes": "18:44",
+          "points": 8,
+          "fg2_made": 0,
+          "fg2_attempted": 1,
+          "fg3_made": 2,
+          "fg3_attempted": 2,
+          "ft_made": 2,
+          "ft_attempted": 4,
+          "rebounds": 2,
+          "off_rebounds": 1,
+          "assists": 2,
+          "steals": 0,
+          "blocks": 1,
+          "rating": 8,
+          "match_id": "104638",
+          "jornada": 1,
+          "opponent": "Real Madrid Baloncesto",
+          "home_away": "Home",
+          "team_score": 92,
+          "opponent_score": 96,
+          "date": "2026-02-15",
+          "round": "1"
         }
       ],
       "past_games": [
@@ -15173,6 +15620,21 @@
           "team_score": 91,
           "opponent_score": 79,
           "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Baloncesto Málaga",
+          "away_team": "Real Madrid Baloncesto",
+          "home_score": 92,
+          "away_score": 96,
+          "played": true,
+          "opponent": "Real Madrid Baloncesto",
+          "home_away": "Home",
+          "team_score": 92,
+          "opponent_score": 96,
+          "result": "L"
         }
       ],
       "upcoming_games": [],
