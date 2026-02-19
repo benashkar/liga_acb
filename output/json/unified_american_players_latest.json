@@ -1,5 +1,5 @@
 {
-  "export_date": "2026-02-18T06:39:25.515312",
+  "export_date": "2026-02-19T06:38:17.093456",
   "season": "2025-26",
   "league": "Liga ACB",
   "player_count": 29,
@@ -1317,7 +1317,23 @@
           "result": "W"
         }
       ],
-      "upcoming_games": [],
+      "upcoming_games": [
+        {
+          "date": "Mié 1-",
+          "round": "1",
+          "venue": null,
+          "home_team": "Baskonia",
+          "away_team": "Basket Zaragoza",
+          "home_score": null,
+          "away_score": null,
+          "played": false,
+          "opponent": "Basket Zaragoza",
+          "home_away": "Home",
+          "team_score": null,
+          "opponent_score": null,
+          "result": null
+        }
+      ],
       "season": "2025-26",
       "league": "Liga ACB"
     },
@@ -3101,7 +3117,23 @@
           "result": "L"
         }
       ],
-      "upcoming_games": [],
+      "upcoming_games": [
+        {
+          "date": "Mié 1-",
+          "round": "1",
+          "venue": null,
+          "home_team": "Baskonia",
+          "away_team": "Basket Zaragoza",
+          "home_score": null,
+          "away_score": null,
+          "played": false,
+          "opponent": "Baskonia",
+          "home_away": "Away",
+          "team_score": null,
+          "opponent_score": null,
+          "result": null
+        }
+      ],
       "season": "2025-26",
       "league": "Liga ACB"
     },
@@ -6399,7 +6431,23 @@
           "result": "L"
         }
       ],
-      "upcoming_games": [],
+      "upcoming_games": [
+        {
+          "date": "Mié 1-",
+          "round": "1",
+          "venue": null,
+          "home_team": "Baskonia",
+          "away_team": "Basket Zaragoza",
+          "home_score": null,
+          "away_score": null,
+          "played": false,
+          "opponent": "Baskonia",
+          "home_away": "Away",
+          "team_score": null,
+          "opponent_score": null,
+          "result": null
+        }
+      ],
       "season": "2025-26",
       "league": "Liga ACB"
     },
@@ -7971,6 +8019,21 @@
           "date": null,
           "round": "1",
           "venue": null,
+          "home_team": "CB Gran Canaria",
+          "away_team": "Bilbao Basket",
+          "home_score": 97,
+          "away_score": 98,
+          "played": true,
+          "opponent": "Bilbao Basket",
+          "home_away": "Home",
+          "team_score": 97,
+          "opponent_score": 98,
+          "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
           "home_team": "Fundación CB Granada",
           "away_team": "CB Gran Canaria",
           "home_score": 83,
@@ -7983,23 +8046,7 @@
           "result": "W"
         }
       ],
-      "upcoming_games": [
-        {
-          "date": "Mié 18-",
-          "round": "1",
-          "venue": null,
-          "home_team": "CB Gran Canaria",
-          "away_team": "Bilbao Basket",
-          "home_score": null,
-          "away_score": null,
-          "played": false,
-          "opponent": "Bilbao Basket",
-          "home_away": "Home",
-          "team_score": null,
-          "opponent_score": null,
-          "result": null
-        }
-      ],
+      "upcoming_games": [],
       "season": "2025-26",
       "league": "Liga ACB"
     },
@@ -14457,7 +14504,23 @@
           "result": "W"
         }
       ],
-      "upcoming_games": [],
+      "upcoming_games": [
+        {
+          "date": "Mié 1-",
+          "round": "1",
+          "venue": null,
+          "home_team": "Baskonia",
+          "away_team": "Basket Zaragoza",
+          "home_score": null,
+          "away_score": null,
+          "played": false,
+          "opponent": "Basket Zaragoza",
+          "home_away": "Home",
+          "team_score": null,
+          "opponent_score": null,
+          "result": null
+        }
+      ],
       "season": "2025-26",
       "league": "Liga ACB"
     },

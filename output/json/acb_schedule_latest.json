@@ -1,9 +1,9 @@
 {
-  "export_date": "2026-02-18T06:39:25.400141",
+  "export_date": "2026-02-19T06:38:16.964443",
   "season": "2025-2026",
   "league": "Liga ACB",
   "source": "acb.com",
-  "game_count": 180,
+  "game_count": 181,
   "games": [
     {
       "game_id": "104459",
@@ -1865,13 +1865,24 @@
       "has_boxscore": true
     },
     {
-      "game_id": null,
+      "game_id": "104623",
       "round": "1",
       "home_team": "DGCDreamland Gran CanariaDreamland GC",
       "away_team": "SBBSurne BilbaoSurne Bilbao",
+      "home_score": 97,
+      "away_score": 98,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": null,
+      "round": "1",
+      "home_team": "BKNKosner BaskoniaKosner Baskonia",
+      "away_team": "CAZCasademont ZaragozaCasademont Zgz",
       "home_score": null,
       "away_score": null,
-      "date": "Mié 18-",
+      "date": "Mié 1-",
       "played": false,
       "has_boxscore": false
     },
