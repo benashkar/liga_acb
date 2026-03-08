@@ -1,5 +1,5 @@
 {
-  "export_date": "2026-03-07T06:24:56.093078",
+  "export_date": "2026-03-08T06:29:01.154097",
   "season": "2025-2026",
   "league": "Liga ACB",
   "player_count": 20,
@@ -2178,6 +2178,27 @@
         {
           "name": "D.J. Stephens",
           "acb_id": "30003817",
+          "def_rebounds": 2,
+          "minutes": "22:07",
+          "points": 6,
+          "fg2_made": 2,
+          "fg2_attempted": 3,
+          "fg3_made": 0,
+          "fg3_attempted": 2,
+          "ft_made": 2,
+          "ft_attempted": 2,
+          "rebounds": 3,
+          "off_rebounds": 1,
+          "assists": 0,
+          "steals": 0,
+          "blocks": 1,
+          "rating": 4,
+          "match_id": "104640",
+          "jornada": 1
+        },
+        {
+          "name": "D.J. Stephens",
+          "acb_id": "30003817",
           "minutes": "14:04",
           "points": 0,
           "fg2_made": 0,
@@ -2197,9 +2218,9 @@
           "jornada": 1
         }
       ],
-      "games_tracked": 16,
+      "games_tracked": 17,
       "calculated_ppg": 4.6,
-      "calculated_rpg": 2.2,
+      "calculated_rpg": 2.3,
       "calculated_apg": 0.2
     },
     {
@@ -6450,11 +6471,32 @@
           "rating": 7,
           "match_id": "104633",
           "jornada": 1
+        },
+        {
+          "name": "E. Happ",
+          "acb_id": "30001954",
+          "def_rebounds": 4,
+          "minutes": "23:19",
+          "points": 12,
+          "fg2_made": 6,
+          "fg2_attempted": 9,
+          "fg3_made": 0,
+          "fg3_attempted": 0,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 5,
+          "off_rebounds": 1,
+          "assists": 2,
+          "steals": 3,
+          "blocks": 1,
+          "rating": 16,
+          "match_id": "104641",
+          "jornada": 1
         }
       ],
-      "games_tracked": 12,
+      "games_tracked": 13,
       "calculated_ppg": 12.2,
-      "calculated_rpg": 6.4,
+      "calculated_rpg": 6.3,
       "calculated_apg": 2.0
     },
     {

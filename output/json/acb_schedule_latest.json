@@ -1,9 +1,9 @@
 {
-  "export_date": "2026-03-07T06:24:56.175647",
+  "export_date": "2026-03-08T06:29:01.237849",
   "season": "2025-2026",
   "league": "Liga ACB",
   "source": "acb.com",
-  "game_count": 181,
+  "game_count": 184,
   "games": [
     {
       "game_id": "104459",
@@ -1981,6 +1981,39 @@
       "away_team": "RMBReal MadridReal Madrid",
       "home_score": 92,
       "away_score": 96,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104639",
+      "round": "1",
+      "home_team": "BAXBAXI ManresaBAXI Manresa",
+      "away_team": "LLTLa Laguna TenerifeLa Laguna TFE",
+      "home_score": 86,
+      "away_score": 80,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104640",
+      "round": "1",
+      "home_team": "MBAMoraBanc AndorraMoraBanc And",
+      "away_team": "CAZCasademont ZaragozaCasademont Zgz",
+      "home_score": 113,
+      "away_score": 111,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104641",
+      "round": "1",
+      "home_team": "BURRecoletas Salud San Pablo BurgosRecoletas Salud",
+      "away_team": "SBBSurne BilbaoSurne Bilbao",
+      "home_score": 96,
+      "away_score": 88,
       "date": null,
       "played": true,
       "has_boxscore": true

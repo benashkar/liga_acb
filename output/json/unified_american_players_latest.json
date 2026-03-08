@@ -1,5 +1,5 @@
 {
-  "export_date": "2026-03-07T06:24:56.286204",
+  "export_date": "2026-03-08T06:29:01.341360",
   "season": "2025-26",
   "league": "Liga ACB",
   "player_count": 29,
@@ -331,6 +331,21 @@
           "team_score": 82,
           "opponent_score": 101,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "CB San Pablo Burgos",
+          "away_team": "Bilbao Basket",
+          "home_score": 96,
+          "away_score": 88,
+          "played": true,
+          "opponent": "Bilbao Basket",
+          "home_away": "Home",
+          "team_score": 96,
+          "opponent_score": 88,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -664,6 +679,21 @@
           "team_score": 75,
           "opponent_score": 107,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "BC Andorra",
+          "away_team": "Basket Zaragoza",
+          "home_score": 113,
+          "away_score": 111,
+          "played": true,
+          "opponent": "Basket Zaragoza",
+          "home_away": "Home",
+          "team_score": 113,
+          "opponent_score": 111,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -2682,6 +2712,21 @@
           "team_score": 75,
           "opponent_score": 107,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "BC Andorra",
+          "away_team": "Basket Zaragoza",
+          "home_score": 113,
+          "away_score": 111,
+          "played": true,
+          "opponent": "Basket Zaragoza",
+          "home_away": "Home",
+          "team_score": 113,
+          "opponent_score": 111,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -2710,9 +2755,9 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/knp6lf1759319345.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 16,
+      "games_played": 17,
       "ppg": 4.6,
-      "rpg": 2.2,
+      "rpg": 2.3,
       "apg": 0.2,
       "game_log": [
         {
@@ -3123,6 +3168,33 @@
         {
           "name": "D.J. Stephens",
           "acb_id": "30003817",
+          "def_rebounds": 2,
+          "minutes": "22:07",
+          "points": 6,
+          "fg2_made": 2,
+          "fg2_attempted": 3,
+          "fg3_made": 0,
+          "fg3_attempted": 2,
+          "ft_made": 2,
+          "ft_attempted": 2,
+          "rebounds": 3,
+          "off_rebounds": 1,
+          "assists": 0,
+          "steals": 0,
+          "blocks": 1,
+          "rating": 4,
+          "match_id": "104640",
+          "jornada": 1,
+          "opponent": "BC Andorra",
+          "home_away": "Away",
+          "team_score": 111,
+          "opponent_score": 113,
+          "date": "2026-03-07",
+          "round": "1"
+        },
+        {
+          "name": "D.J. Stephens",
+          "acb_id": "30003817",
           "minutes": "14:04",
           "points": 0,
           "fg2_made": 0,
@@ -3432,6 +3504,21 @@
           "home_away": "Home",
           "team_score": 67,
           "opponent_score": 79,
+          "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "BC Andorra",
+          "away_team": "Basket Zaragoza",
+          "home_score": 113,
+          "away_score": 111,
+          "played": true,
+          "opponent": "BC Andorra",
+          "home_away": "Away",
+          "team_score": 111,
+          "opponent_score": 113,
           "result": "L"
         },
         {
@@ -5060,9 +5147,9 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/zunefo1700945948.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 12,
+      "games_played": 13,
       "ppg": 12.2,
-      "rpg": 6.4,
+      "rpg": 6.3,
       "apg": 2.0,
       "game_log": [
         {
@@ -5388,6 +5475,33 @@
           "opponent_score": 101,
           "date": "2026-02-14",
           "round": "1"
+        },
+        {
+          "name": "E. Happ",
+          "acb_id": "30001954",
+          "def_rebounds": 4,
+          "minutes": "23:19",
+          "points": 12,
+          "fg2_made": 6,
+          "fg2_attempted": 9,
+          "fg3_made": 0,
+          "fg3_attempted": 0,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 5,
+          "off_rebounds": 1,
+          "assists": 2,
+          "steals": 3,
+          "blocks": 1,
+          "rating": 16,
+          "match_id": "104641",
+          "jornada": 1,
+          "opponent": "Bilbao Basket",
+          "home_away": "Home",
+          "team_score": 96,
+          "opponent_score": 88,
+          "date": "2026-03-07",
+          "round": "1"
         }
       ],
       "past_games": [
@@ -5690,6 +5804,21 @@
           "team_score": 82,
           "opponent_score": 101,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "CB San Pablo Burgos",
+          "away_team": "Bilbao Basket",
+          "home_score": 96,
+          "away_score": 88,
+          "played": true,
+          "opponent": "Bilbao Basket",
+          "home_away": "Home",
+          "team_score": 96,
+          "opponent_score": 88,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -6429,6 +6558,21 @@
           "team_score": 60,
           "opponent_score": 97,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Basquet Manresa",
+          "away_team": "CB 1939 Canarias",
+          "home_score": 86,
+          "away_score": 80,
+          "played": true,
+          "opponent": "CB 1939 Canarias",
+          "home_away": "Home",
+          "team_score": 86,
+          "opponent_score": 80,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -6746,6 +6890,21 @@
           "home_away": "Home",
           "team_score": 67,
           "opponent_score": 79,
+          "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "BC Andorra",
+          "away_team": "Basket Zaragoza",
+          "home_score": 113,
+          "away_score": 111,
+          "played": true,
+          "opponent": "BC Andorra",
+          "home_away": "Away",
+          "team_score": 111,
+          "opponent_score": 113,
           "result": "L"
         },
         {
@@ -11340,6 +11499,21 @@
           "team_score": 82,
           "opponent_score": 101,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "CB San Pablo Burgos",
+          "away_team": "Bilbao Basket",
+          "home_score": 96,
+          "away_score": 88,
+          "played": true,
+          "opponent": "Bilbao Basket",
+          "home_away": "Home",
+          "team_score": 96,
+          "opponent_score": 88,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -12493,6 +12667,21 @@
           "team_score": 75,
           "opponent_score": 107,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "BC Andorra",
+          "away_team": "Basket Zaragoza",
+          "home_score": 113,
+          "away_score": 111,
+          "played": true,
+          "opponent": "Basket Zaragoza",
+          "home_away": "Home",
+          "team_score": 113,
+          "opponent_score": 111,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -12826,6 +13015,21 @@
           "team_score": 90,
           "opponent_score": 81,
           "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Basquet Manresa",
+          "away_team": "CB 1939 Canarias",
+          "home_score": 86,
+          "away_score": 80,
+          "played": true,
+          "opponent": "Basquet Manresa",
+          "home_away": "Away",
+          "team_score": 80,
+          "opponent_score": 86,
+          "result": "L"
         }
       ],
       "upcoming_games": [],
