@@ -1,9 +1,9 @@
 {
-  "export_date": "2026-03-08T06:29:01.237849",
+  "export_date": "2026-03-09T06:39:06.300872",
   "season": "2025-2026",
   "league": "Liga ACB",
   "source": "acb.com",
-  "game_count": 184,
+  "game_count": 190,
   "games": [
     {
       "game_id": "104459",
@@ -2014,6 +2014,72 @@
       "away_team": "SBBSurne BilbaoSurne Bilbao",
       "home_score": 96,
       "away_score": 88,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104642",
+      "round": "1",
+      "home_team": "GIRBàsquet GironaBàsquet Girona",
+      "away_team": "UNIUnicajaUnicaja",
+      "home_score": 83,
+      "away_score": 90,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104643",
+      "round": "1",
+      "home_team": "BRERío BreogánRío Breogán",
+      "away_team": "BARBarçaBarça",
+      "home_score": 78,
+      "away_score": 109,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104645",
+      "round": "1",
+      "home_team": "JOVAsisa JoventutAsisa Joventut",
+      "away_team": "COVCoviran GranadaCoviran Granada",
+      "home_score": 109,
+      "away_score": 73,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104644",
+      "round": "1",
+      "home_team": "VBCValencia BasketValencia Basket",
+      "away_team": "UCMUCAM MurciaUCAM Murcia",
+      "home_score": 110,
+      "away_score": 84,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104646",
+      "round": "1",
+      "home_team": "BKNKosner BaskoniaKosner Baskonia",
+      "away_team": "HIOHiopos LleidaHiopos Lleida",
+      "home_score": 93,
+      "away_score": 90,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104647",
+      "round": "1",
+      "home_team": "DGCDreamland Gran CanariaDreamland GC",
+      "away_team": "RMBReal MadridReal Madrid",
+      "home_score": 80,
+      "away_score": 82,
       "date": null,
       "played": true,
       "has_boxscore": true
