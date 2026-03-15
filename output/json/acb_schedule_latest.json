@@ -1,9 +1,9 @@
 {
-  "export_date": "2026-03-14T06:31:24.283658",
+  "export_date": "2026-03-15T06:36:44.375131",
   "season": "2025-2026",
   "league": "Liga ACB",
   "source": "acb.com",
-  "game_count": 190,
+  "game_count": 194,
   "games": [
     {
       "game_id": "104459",
@@ -2080,6 +2080,50 @@
       "away_team": "RMBReal MadridReal Madrid",
       "home_score": 80,
       "away_score": 82,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104648",
+      "round": "1",
+      "home_team": "UNIUnicajaUnicaja",
+      "away_team": "CAZCasademont ZaragozaCasademont Zgz",
+      "home_score": 112,
+      "away_score": 89,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104649",
+      "round": "1",
+      "home_team": "UCMUCAM MurciaUCAM Murcia",
+      "away_team": "DGCDreamland Gran CanariaDreamland GC",
+      "home_score": 87,
+      "away_score": 76,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104650",
+      "round": "1",
+      "home_team": "LLTLa Laguna TenerifeLa Laguna TFE",
+      "away_team": "VBCValencia BasketValencia Basket",
+      "home_score": 89,
+      "away_score": 71,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104651",
+      "round": "1",
+      "home_team": "SBBSurne BilbaoSurne Bilbao",
+      "away_team": "BRERío BreogánRío Breogán",
+      "home_score": 100,
+      "away_score": 90,
       "date": null,
       "played": true,
       "has_boxscore": true
