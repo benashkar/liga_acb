@@ -1,5 +1,5 @@
 {
-  "export_date": "2026-03-15T06:36:44.485977",
+  "export_date": "2026-03-16T06:49:32.100559",
   "season": "2025-26",
   "league": "Liga ACB",
   "player_count": 31,
@@ -345,6 +345,21 @@
           "home_away": "Home",
           "team_score": 96,
           "opponent_score": 88,
+          "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "CB San Pablo Burgos",
+          "away_team": "Baskonia",
+          "home_score": 107,
+          "away_score": 96,
+          "played": true,
+          "opponent": "Baskonia",
+          "home_away": "Home",
+          "team_score": 107,
+          "opponent_score": 96,
           "result": "W"
         }
       ],
@@ -694,6 +709,21 @@
           "team_score": 113,
           "opponent_score": 111,
           "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Basquet Girona",
+          "away_team": "BC Andorra",
+          "home_score": 82,
+          "away_score": 75,
+          "played": true,
+          "opponent": "Basquet Girona",
+          "home_away": "Away",
+          "team_score": 75,
+          "opponent_score": 82,
+          "result": "L"
         }
       ],
       "upcoming_games": [],
@@ -1405,6 +1435,21 @@
           "team_score": 109,
           "opponent_score": 73,
           "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Joventut Badalona",
+          "away_team": "Barça",
+          "home_score": 84,
+          "away_score": 72,
+          "played": true,
+          "opponent": "Barça",
+          "home_away": "Home",
+          "team_score": 84,
+          "opponent_score": 72,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -2101,6 +2146,21 @@
           "team_score": 93,
           "opponent_score": 90,
           "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "CB San Pablo Burgos",
+          "away_team": "Baskonia",
+          "home_score": 107,
+          "away_score": 96,
+          "played": true,
+          "opponent": "CB San Pablo Burgos",
+          "home_away": "Away",
+          "team_score": 96,
+          "opponent_score": 107,
+          "result": "L"
         }
       ],
       "upcoming_games": [
@@ -2145,9 +2205,9 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/eqzfj51709465852.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 14,
-      "ppg": 6.5,
-      "rpg": 3.5,
+      "games_played": 15,
+      "ppg": 7.0,
+      "rpg": 3.9,
       "apg": 0.9,
       "game_log": [
         {
@@ -2527,6 +2587,33 @@
           "opponent_score": 80,
           "date": "2026-03-08",
           "round": "1"
+        },
+        {
+          "name": "C. Okeke",
+          "acb_id": "30003981",
+          "minutes": "22:19",
+          "points": 14,
+          "fg2_made": 1,
+          "fg2_attempted": 1,
+          "fg3_made": 4,
+          "fg3_attempted": 6,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 9,
+          "def_rebounds": 9,
+          "off_rebounds": 0,
+          "assists": 1,
+          "steals": 1,
+          "blocks": 0,
+          "rating": 20,
+          "match_id": "104654",
+          "jornada": 1,
+          "opponent": "Hiopos Lleida",
+          "home_away": "Home",
+          "team_score": 95,
+          "opponent_score": 78,
+          "date": "2026-03-15",
+          "round": "1"
         }
       ],
       "past_games": [
@@ -2843,6 +2930,21 @@
           "home_away": "Away",
           "team_score": 82,
           "opponent_score": 80,
+          "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Real Madrid Baloncesto",
+          "away_team": "Hiopos Lleida",
+          "home_score": 95,
+          "away_score": 78,
+          "played": true,
+          "opponent": "Hiopos Lleida",
+          "home_away": "Home",
+          "team_score": 95,
+          "opponent_score": 78,
           "result": "W"
         }
       ],
@@ -3192,6 +3294,21 @@
           "team_score": 113,
           "opponent_score": 111,
           "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Basquet Girona",
+          "away_team": "BC Andorra",
+          "home_score": 82,
+          "away_score": 75,
+          "played": true,
+          "opponent": "Basquet Girona",
+          "home_away": "Away",
+          "team_score": 75,
+          "opponent_score": 82,
+          "result": "L"
         }
       ],
       "upcoming_games": [],
@@ -5728,6 +5845,21 @@
           "team_score": 109,
           "opponent_score": 73,
           "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Joventut Badalona",
+          "away_team": "Barça",
+          "home_score": 84,
+          "away_score": 72,
+          "played": true,
+          "opponent": "Barça",
+          "home_away": "Home",
+          "team_score": 84,
+          "opponent_score": 72,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -5756,9 +5888,9 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/zunefo1700945948.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 13,
-      "ppg": 12.2,
-      "rpg": 6.3,
+      "games_played": 14,
+      "ppg": 12.4,
+      "rpg": 6.6,
       "apg": 2.0,
       "game_log": [
         {
@@ -6111,6 +6243,33 @@
           "opponent_score": 88,
           "date": "2026-03-07",
           "round": "1"
+        },
+        {
+          "name": "E. Happ",
+          "acb_id": "30001954",
+          "minutes": "25:20",
+          "points": 16,
+          "fg2_made": 7,
+          "fg2_attempted": 10,
+          "fg3_made": 0,
+          "fg3_attempted": 0,
+          "ft_made": 2,
+          "ft_attempted": 2,
+          "rebounds": 10,
+          "def_rebounds": 7,
+          "off_rebounds": 3,
+          "assists": 2,
+          "steals": 3,
+          "blocks": 3,
+          "rating": 33,
+          "match_id": "104653",
+          "jornada": 1,
+          "opponent": "Baskonia",
+          "home_away": "Home",
+          "team_score": 107,
+          "opponent_score": 96,
+          "date": "2026-03-15",
+          "round": "1"
         }
       ],
       "past_games": [
@@ -6427,6 +6586,21 @@
           "home_away": "Home",
           "team_score": 96,
           "opponent_score": 88,
+          "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "CB San Pablo Burgos",
+          "away_team": "Baskonia",
+          "home_score": 107,
+          "away_score": 96,
+          "played": true,
+          "opponent": "Baskonia",
+          "home_away": "Home",
+          "team_score": 107,
+          "opponent_score": 96,
           "result": "W"
         }
       ],
@@ -7182,6 +7356,21 @@
           "team_score": 86,
           "opponent_score": 80,
           "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Fundación CB Granada",
+          "away_team": "Basquet Manresa",
+          "home_score": 92,
+          "away_score": 79,
+          "played": true,
+          "opponent": "Fundación CB Granada",
+          "home_away": "Away",
+          "team_score": 79,
+          "opponent_score": 92,
+          "result": "L"
         }
       ],
       "upcoming_games": [],
@@ -7529,6 +7718,21 @@
           "home_away": "Home",
           "team_score": 109,
           "opponent_score": 73,
+          "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Joventut Badalona",
+          "away_team": "Barça",
+          "home_score": 84,
+          "away_score": 72,
+          "played": true,
+          "opponent": "Barça",
+          "home_away": "Home",
+          "team_score": 84,
+          "opponent_score": 72,
           "result": "W"
         }
       ],
@@ -8841,10 +9045,10 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/9xy2q21606039685.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 20,
-      "ppg": 5.8,
-      "rpg": 3.4,
-      "apg": 0.7,
+      "games_played": 21,
+      "ppg": 6.3,
+      "rpg": 3.3,
+      "apg": 0.6,
       "game_log": [
         {
           "name": "J. Shurna",
@@ -9313,6 +9517,30 @@
           "jornada": 1,
           "opponent": "Baskonia vs Hiopos Lleida",
           "date": "2026-03-08",
+          "round": "1"
+        },
+        {
+          "name": "J. Shurna",
+          "acb_id": "20210670",
+          "def_rebounds": 1,
+          "minutes": "17:21",
+          "points": 17,
+          "fg2_made": 0,
+          "fg2_attempted": 1,
+          "fg3_made": 5,
+          "fg3_attempted": 7,
+          "ft_made": 2,
+          "ft_attempted": 2,
+          "rebounds": 2,
+          "off_rebounds": 1,
+          "assists": 0,
+          "steals": 1,
+          "blocks": 1,
+          "rating": 18,
+          "match_id": "104654",
+          "jornada": 1,
+          "opponent": "Real Madrid Baloncesto vs Hiopos Lleida",
+          "date": "2026-03-15",
           "round": "1"
         }
       ],
@@ -10443,10 +10671,10 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/qc411f1683398824.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 19,
-      "ppg": 12.6,
+      "games_played": 20,
+      "ppg": 12.4,
       "rpg": 1.6,
-      "apg": 2.0,
+      "apg": 1.9,
       "game_log": [
         {
           "name": "K. Punter",
@@ -10902,6 +11130,30 @@
           "jornada": 1,
           "opponent": "Río Breogán vs Barça",
           "date": "2026-03-08",
+          "round": "1"
+        },
+        {
+          "name": "K. Punter",
+          "acb_id": "30003361",
+          "minutes": "31:57",
+          "points": 9,
+          "fg2_made": 4,
+          "fg2_attempted": 4,
+          "fg3_made": 0,
+          "fg3_attempted": 2,
+          "ft_made": 1,
+          "ft_attempted": 2,
+          "rebounds": 2,
+          "def_rebounds": 2,
+          "off_rebounds": 0,
+          "assists": 1,
+          "steals": 0,
+          "blocks": 4,
+          "rating": 5,
+          "match_id": "104656",
+          "jornada": 1,
+          "opponent": "Joventut Badalona vs Barça",
+          "date": "2026-03-15",
           "round": "1"
         }
       ],
@@ -11631,6 +11883,21 @@
           "team_score": 73,
           "opponent_score": 109,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Fundación CB Granada",
+          "away_team": "Basquet Manresa",
+          "home_score": 92,
+          "away_score": 79,
+          "played": true,
+          "opponent": "Basquet Manresa",
+          "home_away": "Home",
+          "team_score": 92,
+          "opponent_score": 79,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -11908,10 +12175,10 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/usc23m1765618541.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 19,
-      "ppg": 7.9,
-      "rpg": 2.1,
-      "apg": 0.7,
+      "games_played": 20,
+      "ppg": 7.5,
+      "rpg": 2.0,
+      "apg": 0.8,
       "game_log": [
         {
           "name": "M. Cale",
@@ -12368,6 +12635,30 @@
           "opponent": "Río Breogán vs Barça",
           "date": "2026-03-08",
           "round": "1"
+        },
+        {
+          "name": "M. Cale",
+          "acb_id": "30003948",
+          "def_rebounds": 1,
+          "minutes": "15:04",
+          "points": 0,
+          "fg2_made": 0,
+          "fg2_attempted": 0,
+          "fg3_made": 0,
+          "fg3_attempted": 3,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 1,
+          "off_rebounds": 0,
+          "assists": 1,
+          "steals": 1,
+          "blocks": 1,
+          "rating": -1,
+          "match_id": "104656",
+          "jornada": 1,
+          "opponent": "Joventut Badalona vs Barça",
+          "date": "2026-03-15",
+          "round": "1"
         }
       ],
       "past_games": [],
@@ -12716,6 +13007,21 @@
           "home_away": "Home",
           "team_score": 96,
           "opponent_score": 88,
+          "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "CB San Pablo Burgos",
+          "away_team": "Baskonia",
+          "home_score": 107,
+          "away_score": 96,
+          "played": true,
+          "opponent": "Baskonia",
+          "home_away": "Home",
+          "team_score": 107,
+          "opponent_score": 96,
           "result": "W"
         }
       ],
@@ -13969,6 +14275,21 @@
           "team_score": 113,
           "opponent_score": 111,
           "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Basquet Girona",
+          "away_team": "BC Andorra",
+          "home_score": 82,
+          "away_score": 75,
+          "played": true,
+          "opponent": "Basquet Girona",
+          "home_away": "Away",
+          "team_score": 75,
+          "opponent_score": 82,
+          "result": "L"
         }
       ],
       "upcoming_games": [],
@@ -15560,6 +15881,21 @@
           "team_score": 93,
           "opponent_score": 90,
           "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "CB San Pablo Burgos",
+          "away_team": "Baskonia",
+          "home_score": 107,
+          "away_score": 96,
+          "played": true,
+          "opponent": "CB San Pablo Burgos",
+          "home_away": "Away",
+          "team_score": 96,
+          "opponent_score": 107,
+          "result": "L"
         }
       ],
       "upcoming_games": [

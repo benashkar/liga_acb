@@ -1,9 +1,9 @@
 {
-  "export_date": "2026-03-15T06:36:44.375131",
+  "export_date": "2026-03-16T06:49:31.982739",
   "season": "2025-2026",
   "league": "Liga ACB",
   "source": "acb.com",
-  "game_count": 194,
+  "game_count": 199,
   "games": [
     {
       "game_id": "104459",
@@ -2124,6 +2124,61 @@
       "away_team": "BRERío BreogánRío Breogán",
       "home_score": 100,
       "away_score": 90,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104652",
+      "round": "1",
+      "home_team": "GIRBàsquet GironaBàsquet Girona",
+      "away_team": "MBAMoraBanc AndorraMoraBanc And",
+      "home_score": 82,
+      "away_score": 75,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104653",
+      "round": "1",
+      "home_team": "BURRecoletas Salud San Pablo BurgosRecoletas Salud",
+      "away_team": "BKNKosner BaskoniaKosner Baskonia",
+      "home_score": 107,
+      "away_score": 96,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104654",
+      "round": "1",
+      "home_team": "RMBReal MadridReal Madrid",
+      "away_team": "HIOHiopos LleidaHiopos Lleida",
+      "home_score": 95,
+      "away_score": 78,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104655",
+      "round": "1",
+      "home_team": "COVCoviran GranadaCoviran Granada",
+      "away_team": "BAXBAXI ManresaBAXI Manresa",
+      "home_score": 92,
+      "away_score": 79,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104656",
+      "round": "1",
+      "home_team": "JOVAsisa JoventutAsisa Joventut",
+      "away_team": "BARBarçaBarça",
+      "home_score": 84,
+      "away_score": 72,
       "date": null,
       "played": true,
       "has_boxscore": true
