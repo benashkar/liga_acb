@@ -1,5 +1,5 @@
 {
-  "export_date": "2026-03-19T06:37:44.744212",
+  "export_date": "2026-03-20T06:35:44.876319",
   "season": "2025-2026",
   "league": "Liga ACB",
   "match_count": 198,
@@ -51735,7 +51735,7 @@
           "minutes": "20:26",
           "points": 5,
           "fg2_made": 1,
-          "fg2_attempted": 1,
+          "fg2_attempted": 2,
           "fg3_made": 1,
           "fg3_attempted": 5,
           "ft_made": 0,
@@ -51745,7 +51745,7 @@
           "assists": 4,
           "steals": 0,
           "blocks": 1,
-          "rating": 2
+          "rating": 0
         },
         {
           "name": "A. Reyes",
@@ -51753,7 +51753,7 @@
           "minutes": "25:11",
           "points": 12,
           "fg2_made": 0,
-          "fg2_attempted": 1,
+          "fg2_attempted": 0,
           "fg3_made": 4,
           "fg3_attempted": 9,
           "ft_made": 0,
@@ -51764,7 +51764,7 @@
           "assists": 1,
           "steals": 0,
           "blocks": 1,
-          "rating": 7
+          "rating": 9
         },
         {
           "name": "A. Ubal",
@@ -51837,10 +51837,10 @@
           "ft_attempted": 3,
           "rebounds": 4,
           "off_rebounds": 1,
-          "assists": 2,
+          "assists": 1,
           "steals": 0,
           "blocks": 4,
-          "rating": 17
+          "rating": 16
         },
         {
           "name": "E. Brooks",
@@ -51894,10 +51894,10 @@
           "rebounds": 4,
           "def_rebounds": 3,
           "off_rebounds": 1,
-          "assists": 1,
+          "assists": 2,
           "steals": 1,
           "blocks": 6,
-          "rating": 26
+          "rating": 27
         },
         {
           "name": "G. Golden",
