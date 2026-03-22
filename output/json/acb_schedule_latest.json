@@ -1,9 +1,9 @@
 {
-  "export_date": "2026-03-21T06:29:38.269147",
+  "export_date": "2026-03-22T06:33:26.680330",
   "season": "2025-2026",
   "league": "Liga ACB",
   "source": "acb.com",
-  "game_count": 199,
+  "game_count": 203,
   "games": [
     {
       "game_id": "104459",
@@ -2179,6 +2179,50 @@
       "away_team": "BARBarçaBarça",
       "home_score": 84,
       "away_score": 72,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104657",
+      "round": "1",
+      "home_team": "BAXBAXI ManresaBAXI Manresa",
+      "away_team": "UCMUCAM MurciaUCAM Murcia",
+      "home_score": 86,
+      "away_score": 90,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104658",
+      "round": "1",
+      "home_team": "MBAMoraBanc AndorraMoraBanc And",
+      "away_team": "SBBSurne BilbaoSurne Bilbao",
+      "home_score": 98,
+      "away_score": 102,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104659",
+      "round": "1",
+      "home_team": "UNIUnicajaUnicaja",
+      "away_team": "LLTLa Laguna TenerifeLa Laguna TFE",
+      "home_score": 70,
+      "away_score": 95,
+      "date": null,
+      "played": true,
+      "has_boxscore": true
+    },
+    {
+      "game_id": "104660",
+      "round": "1",
+      "home_team": "CAZCasademont ZaragozaCasademont Zgz",
+      "away_team": "BURRecoletas Salud San Pablo BurgosRecoletas Salud",
+      "home_score": 108,
+      "away_score": 98,
       "date": null,
       "played": true,
       "has_boxscore": true
