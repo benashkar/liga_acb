@@ -1,5 +1,5 @@
 {
-  "export_date": "2026-03-22T06:33:26.789352",
+  "export_date": "2026-03-23T06:43:34.928112",
   "season": "2025-26",
   "league": "Liga ACB",
   "player_count": 31,
@@ -1117,6 +1117,21 @@
           "team_score": 71,
           "opponent_score": 89,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Valencia Basket",
+          "away_team": "Fundación CB Granada",
+          "home_score": 107,
+          "away_score": 91,
+          "played": true,
+          "opponent": "Fundación CB Granada",
+          "home_away": "Home",
+          "team_score": 107,
+          "opponent_score": 91,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -1479,6 +1494,21 @@
           "home_away": "Home",
           "team_score": 84,
           "opponent_score": 72,
+          "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Hiopos Lleida",
+          "away_team": "Joventut Badalona",
+          "home_score": 86,
+          "away_score": 88,
+          "played": true,
+          "opponent": "Hiopos Lleida",
+          "home_away": "Away",
+          "team_score": 88,
+          "opponent_score": 86,
           "result": "W"
         }
       ],
@@ -1843,6 +1873,21 @@
           "team_score": 76,
           "opponent_score": 87,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "CB Gran Canaria",
+          "away_team": "Río Breogán",
+          "home_score": 75,
+          "away_score": 83,
+          "played": true,
+          "opponent": "Río Breogán",
+          "home_away": "Home",
+          "team_score": 75,
+          "opponent_score": 83,
+          "result": "L"
         }
       ],
       "upcoming_games": [],
@@ -2191,6 +2236,21 @@
           "team_score": 96,
           "opponent_score": 107,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Baskonia",
+          "away_team": "Basquet Girona",
+          "home_score": 94,
+          "away_score": 81,
+          "played": true,
+          "opponent": "Basquet Girona",
+          "home_away": "Home",
+          "team_score": 94,
+          "opponent_score": 81,
+          "result": "W"
         }
       ],
       "upcoming_games": [
@@ -2975,6 +3035,21 @@
           "home_away": "Home",
           "team_score": 95,
           "opponent_score": 78,
+          "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Barça",
+          "away_team": "Real Madrid Baloncesto",
+          "home_score": 76,
+          "away_score": 95,
+          "played": true,
+          "opponent": "Barça",
+          "home_away": "Away",
+          "team_score": 95,
+          "opponent_score": 76,
           "result": "W"
         }
       ],
@@ -4290,10 +4365,10 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/3pi26u1633288654.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 18,
+      "games_played": 19,
       "ppg": 8.4,
       "rpg": 1.8,
-      "apg": 3.3,
+      "apg": 3.2,
       "game_log": [
         {
           "name": "D. Thompson",
@@ -4780,6 +4855,33 @@
           "opponent_score": 84,
           "date": "2026-03-08",
           "round": "1"
+        },
+        {
+          "name": "D. Thompson",
+          "acb_id": "30001900",
+          "minutes": "19:33",
+          "points": 8,
+          "fg2_made": 4,
+          "fg2_attempted": 6,
+          "fg3_made": 0,
+          "fg3_attempted": 2,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 1,
+          "def_rebounds": 0,
+          "off_rebounds": 1,
+          "assists": 2,
+          "steals": 2,
+          "blocks": 0,
+          "rating": 4,
+          "match_id": "104664",
+          "jornada": 1,
+          "opponent": "Fundación CB Granada",
+          "home_away": "Home",
+          "team_score": 107,
+          "opponent_score": 91,
+          "date": "2026-03-22",
+          "round": "1"
         }
       ],
       "past_games": [
@@ -5112,6 +5214,21 @@
           "team_score": 71,
           "opponent_score": 89,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Valencia Basket",
+          "away_team": "Fundación CB Granada",
+          "home_score": 107,
+          "away_score": 91,
+          "played": true,
+          "opponent": "Fundación CB Granada",
+          "home_away": "Home",
+          "team_score": 107,
+          "opponent_score": 91,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -5961,6 +6078,21 @@
           "home_away": "Home",
           "team_score": 84,
           "opponent_score": 72,
+          "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Hiopos Lleida",
+          "away_team": "Joventut Badalona",
+          "home_score": 86,
+          "away_score": 88,
+          "played": true,
+          "opponent": "Hiopos Lleida",
+          "home_away": "Away",
+          "team_score": 88,
+          "opponent_score": 86,
           "result": "W"
         }
       ],
@@ -7893,6 +8025,21 @@
           "team_score": 84,
           "opponent_score": 72,
           "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Hiopos Lleida",
+          "away_team": "Joventut Badalona",
+          "home_score": 86,
+          "away_score": 88,
+          "played": true,
+          "opponent": "Hiopos Lleida",
+          "home_away": "Away",
+          "team_score": 88,
+          "opponent_score": 86,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -9261,9 +9408,9 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/9xy2q21606039685.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 21,
-      "ppg": 6.3,
-      "rpg": 3.3,
+      "games_played": 22,
+      "ppg": 6.4,
+      "rpg": 3.4,
       "apg": 0.6,
       "game_log": [
         {
@@ -9758,6 +9905,30 @@
           "opponent": "Real Madrid Baloncesto vs Hiopos Lleida",
           "date": "2026-03-15",
           "round": "1"
+        },
+        {
+          "name": "J. Shurna",
+          "acb_id": "20210670",
+          "def_rebounds": 3,
+          "minutes": "18:04",
+          "points": 8,
+          "fg2_made": 1,
+          "fg2_attempted": 1,
+          "fg3_made": 2,
+          "fg3_attempted": 5,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 4,
+          "off_rebounds": 1,
+          "assists": 0,
+          "steals": 1,
+          "blocks": 0,
+          "rating": 8,
+          "match_id": "104661",
+          "jornada": 1,
+          "opponent": "Hiopos Lleida vs Joventut Badalona",
+          "date": "2026-03-22",
+          "round": "1"
         }
       ],
       "past_games": [
@@ -10089,6 +10260,21 @@
           "home_away": "Away",
           "team_score": 76,
           "opponent_score": 87,
+          "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "CB Gran Canaria",
+          "away_team": "Río Breogán",
+          "home_score": 75,
+          "away_score": 83,
+          "played": true,
+          "opponent": "Río Breogán",
+          "home_away": "Home",
+          "team_score": 75,
+          "opponent_score": 83,
           "result": "L"
         }
       ],
@@ -10859,6 +11045,21 @@
           "team_score": 71,
           "opponent_score": 89,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Valencia Basket",
+          "away_team": "Fundación CB Granada",
+          "home_score": 107,
+          "away_score": 91,
+          "played": true,
+          "opponent": "Fundación CB Granada",
+          "home_away": "Home",
+          "team_score": 107,
+          "opponent_score": 91,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -10887,10 +11088,10 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/qc411f1683398824.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 20,
-      "ppg": 12.4,
+      "games_played": 21,
+      "ppg": 12.3,
       "rpg": 1.6,
-      "apg": 1.9,
+      "apg": 2.0,
       "game_log": [
         {
           "name": "K. Punter",
@@ -11370,6 +11571,30 @@
           "jornada": 1,
           "opponent": "Joventut Badalona vs Barça",
           "date": "2026-03-15",
+          "round": "1"
+        },
+        {
+          "name": "K. Punter",
+          "acb_id": "30003361",
+          "minutes": "26:26",
+          "points": 9,
+          "fg2_made": 3,
+          "fg2_attempted": 3,
+          "fg3_made": 1,
+          "fg3_attempted": 4,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 1,
+          "def_rebounds": 1,
+          "off_rebounds": 0,
+          "assists": 2,
+          "steals": 2,
+          "blocks": 5,
+          "rating": 13,
+          "match_id": "104665",
+          "jornada": 1,
+          "opponent": "Barça vs Real Madrid Baloncesto",
+          "date": "2026-03-22",
           "round": "1"
         }
       ],
@@ -12114,6 +12339,21 @@
           "team_score": 92,
           "opponent_score": 79,
           "result": "W"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Valencia Basket",
+          "away_team": "Fundación CB Granada",
+          "home_score": 107,
+          "away_score": 91,
+          "played": true,
+          "opponent": "Valencia Basket",
+          "home_away": "Away",
+          "team_score": 91,
+          "opponent_score": 107,
+          "result": "L"
         }
       ],
       "upcoming_games": [],
@@ -12391,10 +12631,10 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/usc23m1765618541.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 20,
-      "ppg": 7.5,
+      "games_played": 21,
+      "ppg": 7.1,
       "rpg": 2.0,
-      "apg": 0.8,
+      "apg": 0.7,
       "game_log": [
         {
           "name": "M. Cale",
@@ -12875,6 +13115,30 @@
           "opponent": "Joventut Badalona vs Barça",
           "date": "2026-03-15",
           "round": "1"
+        },
+        {
+          "name": "M. Cale",
+          "acb_id": "30003948",
+          "def_rebounds": 1,
+          "minutes": "08:25",
+          "points": 0,
+          "fg2_made": 0,
+          "fg2_attempted": 0,
+          "fg3_made": 0,
+          "fg3_attempted": 2,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 1,
+          "off_rebounds": 0,
+          "assists": 0,
+          "steals": 0,
+          "blocks": 0,
+          "rating": -1,
+          "match_id": "104665",
+          "jornada": 1,
+          "opponent": "Barça vs Real Madrid Baloncesto",
+          "date": "2026-03-22",
+          "round": "1"
         }
       ],
       "past_games": [],
@@ -13282,8 +13546,8 @@
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/so6kai1767617005.jpg",
       "instagram": "",
       "twitter": "",
-      "games_played": 20,
-      "ppg": 8.8,
+      "games_played": 21,
+      "ppg": 9.0,
       "rpg": 2.6,
       "apg": 2.9,
       "game_log": [
@@ -13826,6 +14090,33 @@
           "opponent_score": 89,
           "date": "2026-03-14",
           "round": "1"
+        },
+        {
+          "name": "O. Moore",
+          "acb_id": "30003991",
+          "def_rebounds": 2,
+          "minutes": "21:39",
+          "points": 12,
+          "fg2_made": 4,
+          "fg2_attempted": 4,
+          "fg3_made": 0,
+          "fg3_attempted": 3,
+          "ft_made": 4,
+          "ft_attempted": 4,
+          "rebounds": 2,
+          "off_rebounds": 0,
+          "assists": 4,
+          "steals": 0,
+          "blocks": 3,
+          "rating": 15,
+          "match_id": "104664",
+          "jornada": 1,
+          "opponent": "Fundación CB Granada",
+          "home_away": "Home",
+          "team_score": 107,
+          "opponent_score": 91,
+          "date": "2026-03-22",
+          "round": "1"
         }
       ],
       "past_games": [
@@ -14158,6 +14449,21 @@
           "team_score": 71,
           "opponent_score": 89,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Valencia Basket",
+          "away_team": "Fundación CB Granada",
+          "home_score": 107,
+          "away_score": 91,
+          "played": true,
+          "opponent": "Fundación CB Granada",
+          "home_away": "Home",
+          "team_score": 107,
+          "opponent_score": 91,
+          "result": "W"
         }
       ],
       "upcoming_games": [],
@@ -16196,6 +16502,21 @@
           "team_score": 96,
           "opponent_score": 107,
           "result": "L"
+        },
+        {
+          "date": null,
+          "round": "1",
+          "venue": null,
+          "home_team": "Baskonia",
+          "away_team": "Basquet Girona",
+          "home_score": 94,
+          "away_score": 81,
+          "played": true,
+          "opponent": "Basquet Girona",
+          "home_away": "Home",
+          "team_score": 94,
+          "opponent_score": 81,
+          "result": "W"
         }
       ],
       "upcoming_games": [

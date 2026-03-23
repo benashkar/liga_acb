@@ -1,5 +1,5 @@
 {
-  "export_date": "2026-03-22T06:33:26.590307",
+  "export_date": "2026-03-23T06:43:34.708020",
   "season": "2025-2026",
   "league": "Liga ACB",
   "player_count": 20,
@@ -1995,11 +1995,32 @@
           "rating": 3,
           "match_id": "104654",
           "jornada": 1
+        },
+        {
+          "name": "S. Llull",
+          "acb_id": "20201774",
+          "def_rebounds": 0,
+          "minutes": "11:28",
+          "points": 3,
+          "fg2_made": 0,
+          "fg2_attempted": 1,
+          "fg3_made": 1,
+          "fg3_attempted": 2,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 0,
+          "off_rebounds": 0,
+          "assists": 2,
+          "steals": 1,
+          "blocks": 0,
+          "rating": 2,
+          "match_id": "104665",
+          "jornada": 1
         }
       ],
-      "games_tracked": 22,
-      "calculated_ppg": 7.6,
-      "calculated_rpg": 1.7,
+      "games_tracked": 23,
+      "calculated_ppg": 7.4,
+      "calculated_rpg": 1.6,
       "calculated_apg": 2.7
     },
     {
@@ -2647,12 +2668,33 @@
           "rating": 26,
           "match_id": "104653",
           "jornada": 1
+        },
+        {
+          "name": "T. Forrest",
+          "acb_id": "30003408",
+          "def_rebounds": 2,
+          "minutes": "24:18",
+          "points": 8,
+          "fg2_made": 2,
+          "fg2_attempted": 3,
+          "fg3_made": 0,
+          "fg3_attempted": 3,
+          "ft_made": 4,
+          "ft_attempted": 4,
+          "rebounds": 3,
+          "off_rebounds": 1,
+          "assists": 3,
+          "steals": 2,
+          "blocks": 2,
+          "rating": 13,
+          "match_id": "104663",
+          "jornada": 1
         }
       ],
-      "games_tracked": 11,
-      "calculated_ppg": 14.3,
-      "calculated_rpg": 3.4,
-      "calculated_apg": 4.3
+      "games_tracked": 12,
+      "calculated_ppg": 13.8,
+      "calculated_rpg": 3.3,
+      "calculated_apg": 4.2
     },
     {
       "acb_id": "30003919",
@@ -3940,10 +3982,31 @@
           "rating": 2,
           "match_id": "104650",
           "jornada": 1
+        },
+        {
+          "name": "N. Reuvers",
+          "acb_id": "30002724",
+          "def_rebounds": 1,
+          "minutes": "13:28",
+          "points": 8,
+          "fg2_made": 3,
+          "fg2_attempted": 5,
+          "fg3_made": 0,
+          "fg3_attempted": 1,
+          "ft_made": 2,
+          "ft_attempted": 2,
+          "rebounds": 3,
+          "off_rebounds": 2,
+          "assists": 0,
+          "steals": 0,
+          "blocks": 4,
+          "rating": 11,
+          "match_id": "104664",
+          "jornada": 1
         }
       ],
-      "games_tracked": 22,
-      "calculated_ppg": 9.2,
+      "games_tracked": 23,
+      "calculated_ppg": 9.1,
       "calculated_rpg": 2.9,
       "calculated_apg": 0.6
     },
@@ -4371,10 +4434,31 @@
           "rating": 2,
           "match_id": "104650",
           "jornada": 1
+        },
+        {
+          "name": "O. Moore",
+          "acb_id": "30003991",
+          "def_rebounds": 2,
+          "minutes": "21:39",
+          "points": 12,
+          "fg2_made": 4,
+          "fg2_attempted": 4,
+          "fg3_made": 0,
+          "fg3_attempted": 3,
+          "ft_made": 4,
+          "ft_attempted": 4,
+          "rebounds": 2,
+          "off_rebounds": 0,
+          "assists": 4,
+          "steals": 0,
+          "blocks": 3,
+          "rating": 15,
+          "match_id": "104664",
+          "jornada": 1
         }
       ],
-      "games_tracked": 20,
-      "calculated_ppg": 8.8,
+      "games_tracked": 21,
+      "calculated_ppg": 9.0,
       "calculated_rpg": 2.6,
       "calculated_apg": 2.9
     },
@@ -4760,12 +4844,33 @@
           "rating": 1,
           "match_id": "104644",
           "jornada": 1
+        },
+        {
+          "name": "D. Thompson",
+          "acb_id": "30001900",
+          "minutes": "19:33",
+          "points": 8,
+          "fg2_made": 4,
+          "fg2_attempted": 6,
+          "fg3_made": 0,
+          "fg3_attempted": 2,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 1,
+          "def_rebounds": 0,
+          "off_rebounds": 1,
+          "assists": 2,
+          "steals": 2,
+          "blocks": 0,
+          "rating": 4,
+          "match_id": "104664",
+          "jornada": 1
         }
       ],
-      "games_tracked": 18,
+      "games_tracked": 19,
       "calculated_ppg": 8.4,
       "calculated_rpg": 1.8,
-      "calculated_apg": 3.3
+      "calculated_apg": 3.2
     },
     {
       "acb_id": "30003361",
@@ -5191,12 +5296,33 @@
           "rating": 5,
           "match_id": "104656",
           "jornada": 1
+        },
+        {
+          "name": "K. Punter",
+          "acb_id": "30003361",
+          "minutes": "26:26",
+          "points": 9,
+          "fg2_made": 3,
+          "fg2_attempted": 3,
+          "fg3_made": 1,
+          "fg3_attempted": 4,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 1,
+          "def_rebounds": 1,
+          "off_rebounds": 0,
+          "assists": 2,
+          "steals": 2,
+          "blocks": 5,
+          "rating": 13,
+          "match_id": "104665",
+          "jornada": 1
         }
       ],
-      "games_tracked": 20,
-      "calculated_ppg": 12.4,
+      "games_tracked": 21,
+      "calculated_ppg": 12.3,
       "calculated_rpg": 1.6,
-      "calculated_apg": 1.9
+      "calculated_apg": 2.0
     },
     {
       "acb_id": "30003948",
@@ -5622,12 +5748,33 @@
           "rating": -1,
           "match_id": "104656",
           "jornada": 1
+        },
+        {
+          "name": "M. Cale",
+          "acb_id": "30003948",
+          "def_rebounds": 1,
+          "minutes": "08:25",
+          "points": 0,
+          "fg2_made": 0,
+          "fg2_attempted": 0,
+          "fg3_made": 0,
+          "fg3_attempted": 2,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 1,
+          "off_rebounds": 0,
+          "assists": 0,
+          "steals": 0,
+          "blocks": 0,
+          "rating": -1,
+          "match_id": "104665",
+          "jornada": 1
         }
       ],
-      "games_tracked": 20,
-      "calculated_ppg": 7.5,
+      "games_tracked": 21,
+      "calculated_ppg": 7.1,
       "calculated_rpg": 2.0,
-      "calculated_apg": 0.8
+      "calculated_apg": 0.7
     },
     {
       "acb_id": "30003977",
@@ -5948,12 +6095,33 @@
           "rating": 16,
           "match_id": "104656",
           "jornada": 1
+        },
+        {
+          "name": "W. Clyburn",
+          "acb_id": "30003977",
+          "minutes": "28:28",
+          "points": 14,
+          "fg2_made": 2,
+          "fg2_attempted": 6,
+          "fg3_made": 2,
+          "fg3_attempted": 5,
+          "ft_made": 4,
+          "ft_attempted": 4,
+          "rebounds": 4,
+          "def_rebounds": 4,
+          "off_rebounds": 0,
+          "assists": 3,
+          "steals": 1,
+          "blocks": 2,
+          "rating": 16,
+          "match_id": "104665",
+          "jornada": 1
         }
       ],
-      "games_tracked": 15,
-      "calculated_ppg": 12.4,
+      "games_tracked": 16,
+      "calculated_ppg": 12.5,
       "calculated_rpg": 4.2,
-      "calculated_apg": 1.5
+      "calculated_apg": 1.6
     },
     {
       "acb_id": "30000954",
@@ -6838,11 +7006,32 @@
           "rating": 18,
           "match_id": "104654",
           "jornada": 1
+        },
+        {
+          "name": "J. Shurna",
+          "acb_id": "20210670",
+          "def_rebounds": 3,
+          "minutes": "18:04",
+          "points": 8,
+          "fg2_made": 1,
+          "fg2_attempted": 1,
+          "fg3_made": 2,
+          "fg3_attempted": 5,
+          "ft_made": 0,
+          "ft_attempted": 0,
+          "rebounds": 4,
+          "off_rebounds": 1,
+          "assists": 0,
+          "steals": 1,
+          "blocks": 0,
+          "rating": 8,
+          "match_id": "104661",
+          "jornada": 1
         }
       ],
-      "games_tracked": 21,
-      "calculated_ppg": 6.3,
-      "calculated_rpg": 3.3,
+      "games_tracked": 22,
+      "calculated_ppg": 6.4,
+      "calculated_rpg": 3.4,
       "calculated_apg": 0.6
     },
     {
