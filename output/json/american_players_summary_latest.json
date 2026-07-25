@@ -1,8 +1,8 @@
 {
-  "export_date": "2026-07-24T06:58:58.711993",
+  "export_date": "2026-07-25T06:54:37.805353",
   "season": "2025-26",
   "league": "Liga ACB",
-  "player_count": 15,
+  "player_count": 16,
   "players": [
     {
       "code": "34179557",
@@ -299,6 +299,26 @@
       "college": null,
       "high_school": null,
       "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/95db4y1619819099.jpg",
+      "games_played": 0,
+      "ppg": 0.0,
+      "rpg": 0.0,
+      "apg": 0.0
+    },
+    {
+      "code": "34220733",
+      "name": "Tyson Carter",
+      "team": "Baloncesto Málaga",
+      "team_code": "135096",
+      "position": "Shooting Guard",
+      "jersey": "11",
+      "height_feet": null,
+      "height_inches": null,
+      "birth_date": "1998-01-14",
+      "hometown": null,
+      "hometown_state": null,
+      "college": null,
+      "high_school": null,
+      "headshot_url": "https://r2.thesportsdb.com/images/media/player/thumb/mpr8r61695063305.jpg",
       "games_played": 0,
       "ppg": 0.0,
       "rpg": 0.0,
